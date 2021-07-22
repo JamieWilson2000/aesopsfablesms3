@@ -1,104 +1,289 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# <u>Milestone Project 3: The Greatest Movie Of All Time</u>
 
-Welcome USER_NAME,
+![site screenshot]()
+ 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+# [Link to visit ""]()
 
-## Gitpod Reminders
+# Contents
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## - [Project Aims](#aim-of-the-project)
+## - [User Story](#user-story)
+## - [The 5 planes of UX](#the-5-planes-of-ux)
+## - [Early Stages](#early-stages)
+## - [The Website Features](#the-website-features)
+## - [User Interaction](#user-interaction)
+## - [The Coding Languages and Techniques Used](#the-coding-languages-and-techniques-used)
+## - [Method of Deployment](#method-of-deployment)
+## - [Methods of Testing](#methods-of-testing)
+## - [Code Validations](#code-validations)
+## - [Credits](#credits)
 
-`python3 -m http.server`
+<br>
 
-A blue button should appear to click: _Make Public_,
+# Aim of the project
 
-Another blue button should appear to click: _Open Browser_.
+- 
+<br>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- 
+<br>
 
-A blue button should appear to click: _Make Public_,
+- 
+<br>
 
-Another blue button should appear to click: _Open Browser_.
+- 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+# User Story
 
-To log into the Heroku toolbelt CLI:
+- 
+- 
+- This site should appeal to and be suited for :
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+    - 
+    - 
+    - 
+    - 
+    - 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- Site objectives for new users
+    - 
 
-------
+- 
 
-## Release History
+- User Conclusion
+    - 
+    - 
+    - 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+# The 5 planes of UX
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- When planning out this site I thought it important to implement the same 5 planes of UX that I had used when designing my Milestone Project 1 and 2. Doing this makes the process an easier task.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- ## <u>The strategy</u>
+    
+- ## <u>The Scope</u>
+    
+- ## <u>The Structure</u>
+    
+- ## <u>The Skeleton</u>
+    
+- ## <u>The Surface</u>
+    
+   
+    ---
+# Early Stages
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Wireframes
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+<img src="" alt="" width="150" height="300">
+<img src="" alt="" width="150" height="300">
+<img src="" alt="" width="150" height="300">
+<img src="" alt="" width="150" height="300">
+<img src="" alt="" width="150" height="300">
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- Above is a summary of the wireframes for this site EXPAND ON THIS
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+<img src="" alt="" width="150" height="300">
+<img src="" alt="" width="150" height="300">
+<img src="" alt="" width="150" height="300">
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- EXPAND ON ABOVE WIREFRAMES
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+<img src="" alt="" width="179" height="250">
+<img src="" alt="" width="179" height="250">
+<img src="" alt="" width="179" height="250">
+<img src="" alt="" width="179" height="250">
+<img src="" alt="" width="179" height="250">
+<img src="" alt="" width="179" height="250">
+<img src="" alt="" width="179" height="250">
+<img src="" alt="" width="179" height="250">
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- EXPAND ON ABOVE WIREFAMES
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+<img src="" alt="" width="218" height="150">
+<img src="" alt="" width="218" height="150">
+<img src="" alt="" width="218" height="150">
+<img src="" alt="" width="218" height="150">
+<img src="" alt="" width="218" height="150">
+<img src="" alt="" width="218" height="150">
+<img src="" alt="" width="218" height="150">
+<img src="" alt="" width="218" height="150">
 
-------
+- EXPAND ON ABOVE WIREFRAMES
+    EXPAND ON FULL VIEW WIREFRAMES BELOW
 
-## FAQ about the uptime script
+- [Link to landing page desktop view]()
+- [Link to landing page tablet view]()
+- [Link to landing page mobile view]()
+- [Link to entry page desktop view]()
+- [Link to entry page tablet view]()
+- [Link to entry page mobile view]()
+- [Link to easy level page desktop view]()
+- [Link to easy level page tablet view]()
+- [Link to easy level page mobile view]()
+- [Link to easy level game over page desktop view]()
+- [Link to easy level game over page tablet view]()
+- [Link to easy level game over page mobile view]()
+- [Link to medium level page desktop view]()
+- [Link to medium level page tablet view]()
+- [Link to medium level page mobile view]()
+- [Link to medium level game over page desktop view]()
+- [Link to medium level game over page tablet view]()
+- [Link to medium level game over page mobile view]()
+- [Link to hard level page desktop view]()
+- [Link to hard level page tablet view]()
+- [Link to hard level page mobile view]()
+- [Link to hard level game over page desktop view]()
+- [Link to hard level game over page tablet view]()
+- [Link to hard level game over page mobile view]()
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Colour Schemes
 
-**How will this affect me?**
+<img src="IMAGEFORCOOLORS.CO" alt="" width="500" height="197">
+<img src="IMAGEFORCOOLERS.CO" alt="" width="480" height="197">
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+EXPLANATION OF USE OF COLORSCHEME<br>
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+<img src="CONTRASTCHECK1" alt="" width="250" height="180">
+<img src="CONTRASTCHECK2" alt="" width="250" height="180">
+<img src="CONTRASTCHECK3" alt="" width="250" height="180">
+<br>
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+- I adopted these colors in the following styles:
+    EXPAND ON THIS
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
+## Fonts
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+- For the textual elements I imported in two font family variants from Google Fonts.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+    ![Main Font](FONT IMAGE)<br>
+    - 
+    - 
 
-**Anything more?**
+## Audio IF USED
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
 
-Happy coding!
+# The Website Features
+
+- ## <u>As Submitted</u>
+       
+- ## <u>Features I would include in the future</u>
+
+# User Interaction
+
+# The Coding Languages and Techniques Used
+
+- This site was constructed using:
+    - HTML5
+    - CSS3
+    - Javascript
+    - jQuery
+    - Bootstrap 4.2.1
+    - Fontawesome
+    - Balsmiq was used for creating the wireframes for this project.
+   
+   # Method of Deployment
+
+- To fully test the site on multiple 'real-world' devices I needed to create a live link to the site that could be accessed universally. To do this, a simple procedure is required. 
+
+    - Step 1: Open Github.com and sign in.
+    - Step 2: Once signed in you should see your repositorys in chronological order.
+    - Step 3: Select the repository you wish to create a link for and once selected click the settings tab on the page.
+    - Step 4: Within the settings page you will be given the option to rename the repository, add an image to customize your social media preview, and many other options to be explored at a later date.
+    - Step 5: Scroll down and you will find the heading for GitHub Pages.
+    - Step 6: At this stage the 'source' field should read 'none' so click on the button and select 'master'
+    - Step 7: Once this is selected, hit save and the page should refresh bringing you back to the top.
+    - Step 8: Scroll back down to the Github pages section and you will now see a message informing the user that the site is ready to be published and a highlighted link. Make a note of the link address for future reference or click the link to access the site direct. 
+
+- From this point on you can type in and access your site on any device with an internet browser which is ideal for testing purposes.
+
+## For those wishing to develop the site further using a repository clone:
+- You must first ensure that you have a current Github account.
+- Be running the most up to date version of Google Chrome with the Gitpod browser extension installed.
+- Login to Github with your own github account.
+- Navigate to the Project Github Repository page.
+- Click the New button, this will trigger a new workspace.
+- Under Create a new Repository select Import a Repository
+- Now, in the Your Old Repository Clone URL field, type in ""
+- Enter in a new relevant repository name and click Begin Import.
+- After a short while you'll recieve a message saying that the new repository is ready with a link to take you to it.
+- From here on, open gipod and continue future developments.  
+
+# Methods of Testing
+
+- Throughout the development stage I used a handful of methods to ensure the site looked and acted appropriately.<br> These included:
+
+    - Chrome Dev Tools - for testing stylings, sizing, and responsiveness
+
+    - Mozilla Dev Tools - for testing stylings, sizing, and responsiveness
+
+    - http://ami.responsivedesign.is/ - again for testing stylings, sizing, and responsiveness.
+
+    - https://coolors.co/ - for picking color schemes and testing contrast colors
+
+    - Github Pages - to access the live site across different devices
+
+    - Google Lighthouse - to test perfomance 
+
+
+## Summary of User Testing
+
+- User 1: 
+<br>
+
+- 
+
+- User 2:
+<br>
+
+
+- User 3: 
+<br>
+
+- CONCLUSIONS
+
+## Problems and bugs experienced along the way
+
+- Problem: 
+- Fix: 
+
+# Code Validations
+
+## HTML Validator
+
+- 
+
+## CSS Validator
+
+- 
+
+## Javascript Validator
+
+- 
+
+## Lighthouse Testing
+
+
+# Credits
+
+
+## Throughout the creation of this project I have referred to the following for assistance and guidance:
+
+- https://codeinstitute.net/
+
+
+
+# Acknowledgement
+
+
+# - [Back to top](#contents)
+
+
