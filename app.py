@@ -29,6 +29,24 @@ def home():
     return render_template("home.html")
 
 
+@app.route("/fables")
+def fables():
+    return render_template("fables.html")
+
+
+@app.route("/history")
+def history():
+    return render_template("history.html")
+
+@app.route("/login")
+def login():
+    return render_template("login.html")
+
+
+@app.route("/register")
+def register():
+    return render_template("register.html")
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
     port=int(os.environ.get("PORT")),

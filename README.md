@@ -253,7 +253,7 @@ EXPLANATION OF USE OF COLORSCHEME<br>
 
 ## Problems and bugs experienced along the way
 
-- Problem: 
+- Problem: Image not displaying on homepage
 - Fix: 
 
 # Code Validations
