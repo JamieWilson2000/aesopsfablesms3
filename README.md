@@ -1,4 +1,4 @@
-# <u>Milestone Project 3: The Greatest Movie Of All Time</u>
+# <u>Milestone Project 3: Aesops Fables</u>
 
 ![site screenshot]()
  
@@ -23,38 +23,35 @@
 
 # Aim of the project
 
-- 
-<br>
+- The first aim of this project is to create an interesting website, reflecting on the fables written by greek storyteller Aesop. Myself, coming from a non religious background and being raised in a multi-denominational school with no religious education, the fables were a way to teach children the morals adhered to in life from a completely fictional and light-hearted perspective. For some, Aesops Fables will be completely new to them, for others it will be a chance to reflect on the stories read and taught to them throughout their childhood.
 
-- 
-<br>
+- The second aim of the project is to encourage the creativity of the user visiting the site to write their own fable. Each new story would be read and considered for featuring within our selection of fables. Since this is a mock-up website the purpose of this aspect is purely to demonstrate the ability to submit a story / fable and as such, obviously the tale would not be featuring in the fable selection. 
 
-- 
-<br>
+# This site should appeal to and be suited for : 
 
-- 
+- Someone who grew up learning using Aesop Fables.
+- Someone who has recently learnt and has an interest in the Fables. 
+- Someone who has an interest in Greece, it's history, and is looking to expand on their knowledge of Aesop.
+- An educational body (schools, writing organisations etc) who use or have an interest in including Aesops fables into the current learning curriculum. 
+<br>
 
 # User Story
 
-- 
-- 
-- This site should appeal to and be suited for :
+- As a first time visitor to the site, I would want a clean, clear user interface, instantly outlining the purpose of the site. 
+- As a first time visitor I would want to be able to navigate easily to the relevant areas of the site that are of interest to me.
+- As a first time visitor I would want to know the benefits of creating an account and why it is being suggested to log in.
+- As a visitor to the site I would expect responsiveness across all devices so the content would look and feel the same regardless of the device used.
+<br>
 
-    - 
-    - 
-    - 
-    - 
-    - 
-
-- Site objectives for new users
-    - 
-
-- 
+- As a returning visitor to the site I would want to log in to my account to access my personal details and any interactivity I have taken part in.
+- As a returning visitor I would want to access my profile to check results of competitions entered.
+- As a returning visitor I would want to be able to contact the administrators of the site to ask questions, suggest new ideas, complain regarding content, etc.
 
 - User Conclusion
-    - 
-    - 
-    - 
+    - After visiting the site I would like to feel that I have enjoyed a good user experience interacting with the site.
+    - I have learnt something regarding the storyteller Aesop and the fables that made him famous.
+    - I have contributed to the whole experience by submitting content that could potentially be included within the site.
+    - I would have gained enthusiasm and motivation to encourage educational bodies to visit the site, and encourage young learners to read the stories, and create their own.
 
 
 
@@ -78,14 +75,18 @@
 
 ## Wireframes
 
-<img src="" alt="" width="150" height="300">
-<img src="" alt="" width="150" height="300">
-<img src="" alt="" width="150" height="300">
-<img src="" alt="" width="150" height="300">
-<img src="" alt="" width="150" height="300">
+<img src="assets/wireframes/1landingpage.png" alt="landingpage" width="150" height="300">
+<img src="assets/wireframes/2mainpage.png" alt="mainpage" width="150" height="300">
+<img src="assets/wireframes/3mainpagewithloggedoutdropdown.png" alt="loggedoutdropdown" width="150" height="300">
+<img src="assets/wireframes/4mainpagewithloggedindropdown.png" alt="loggedindropdown" width="150" height="300">
+<img src="assets/wireframes/5storypage.png" alt="story" width="150" height="300">
+<img src="assets/wireframes/6historypage.png" alt="history" width="150" height="300">
+<img src="assets/wireframes/7login.png" alt="login" width="150" height="300">
+<img src="assets/wireframes/8register.png" alt="register" width="150" height="300">
+<img src="assets/wireframes/9competitionpage.png" alt="competition" width="150" height="300">
 
 
-- Above is a summary of the wireframes for this site EXPAND ON THIS
+- Above is a summary of the wireframes for this site in it's mobile version.
 
 <img src="" alt="" width="150" height="300">
 <img src="" alt="" width="150" height="300">
