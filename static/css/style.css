@@ -1,11 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Zen+Loop:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 body {
-    background-color: green;
+    background-color: grey;
+}
+p {
+    font-family: 'Libre Baskerville', serif;
+    font-size:medium;
 }
 .sidenav {
     height: 300px;
 }
-.brand-logo {
+.brand-logo, h2 {
+    width: 100%;
+    text-align: center;
     margin-left: 10px;
-    font-family: 'Otomanopee One', sans-serif; 
+    color: white;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 2rem;
+}
+.col {
+    border: 1px solid black;
+} 
+.container {
+    margin-top:20px;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
 }

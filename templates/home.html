@@ -1,9 +1,32 @@
 {% extends "base.html" %}
 {% block content %}
-<h2>Home Page</h2>
+
+
+<div class="container">
+    <!--Opening Header-->
+    <div class="row">
+        <div class="col s12">
+            <img src="{{ url_for('static', filename='images/lions-share.jpeg') }}" alt="homepage-image">
+        </div>
+        <div class="col s12 grey darken-2">
+            <h2>Just sit back, relax and let me tell you a story....</h2>
+        </div>
+        </div>
+        <!--Introduction-->
+      <div class="row">
+        <div class="col s12">
+            <p>
+                Once upon a time, long ago in Ancient Greece, there lived a man who was a slave, but also a fantastic storyteller. He told his stories to the local children on the streets, and to the adults at banquets by means of entertaining.<br>
+                Through the years the stories have been re-told, re-written and re-loved by people young and old.<br>
+                Enter into the world of Aesop and learn about the man, and enjoy a handful of his most famous fables that have been lovingly portrayed throughout centuries and still enjoyed today!
+            </p>
+        </div>
+        
+      </div>
+  </div>
 
 <div>
-    <img src="assets/images/lions-share.jpeg" alt="homepage-image">
+    
 </div>
 
 {% endblock %}
