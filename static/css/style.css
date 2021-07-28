@@ -7,6 +7,16 @@ p {
     font-family: 'Libre Baskerville', serif;
     font-size:medium;
 }
+.text-decoration {
+    text-shadow: 2px 2px 2px black;
+}
+.text-nav {
+    margin-left: 20%;
+    color: white;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 2rem;
+    
+}
 .sidenav {
     height: 300px;
 }

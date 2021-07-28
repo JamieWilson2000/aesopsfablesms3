@@ -9,24 +9,30 @@
             <img src="{{ url_for('static', filename='images/lions-share.jpeg') }}" alt="homepage-image">
         </div>
         <div class="col s12 grey darken-2">
-            <h2>Just sit back, relax and let me tell you a story....</h2>
+            <h2 class="text-decoration">Just sit back, relax and let me tell you a story....</h2>
         </div>
-        </div>
-        <!--Introduction-->
-      <div class="row">
-        <div class="col s12">
+    </div>
+    <!--Introduction-->
+    <div class="row">
+        <div class="col s12 white">
             <p>
-                Once upon a time, long ago in Ancient Greece, there lived a man who was a slave, but also a fantastic storyteller. He told his stories to the local children on the streets, and to the adults at banquets by means of entertaining.<br>
+                Once upon a time, long ago in Ancient Greece, there lived a man who, whilst although a slave, was also a
+                fantastic storyteller. He told his stories to the local children on the streets, and to the adults at
+                banquets by means of entertaining.<br>
                 Through the years the stories have been re-told, re-written and re-loved by people young and old.<br>
-                Enter into the world of Aesop and learn about the man, and enjoy a handful of his most famous fables that have been lovingly portrayed throughout centuries and still enjoyed today!
+                Enter into the world of Aesop and learn about the man, and enjoy a handful of his most famous fables
+                that have been lovingly portrayed throughout centuries and still enjoyed today!
             </p>
         </div>
-        
+    </div>
+
+    <div class="row">
+        <a href="{{ url_for('history') }}" class="col s6 offset-s6 grey darken-2"><span class="flow-text text-nav">History</span>></a>
       </div>
-  </div>
+</div>
 
 <div>
-    
+
 </div>
 
 {% endblock %}
