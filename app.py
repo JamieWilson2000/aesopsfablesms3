@@ -1,6 +1,5 @@
 import os
-from flask import (
-    Flask, flash, render_template, redirect, request, session, url_for)
+from flask import (Flask, flash, render_template, redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 if os.path.exists("env.py"):
     import env
@@ -18,15 +17,18 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
-@app.route("/get_details")
+
+@app.route("/home")
+def home():
+    return render_template("home.html")
+
+
 def get_details():
     members = mongo.db.members.find()
     return render_template("details.html", members=members)
 
 
-@app.route("/home")
-def home():
-    return render_template("home.html")
+
 
 
 @app.route("/fables")

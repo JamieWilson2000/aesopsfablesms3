@@ -4,18 +4,24 @@ body {
     background-color: grey;
 }
 p {
+    margin-top: 0;
+    margin-bottom: 0;
     font-family: 'Libre Baskerville', serif;
     font-size:medium;
 }
 .text-decoration {
+    line-height: 2em;
     text-shadow: 2px 2px 2px black;
+    margin-left: 0;
 }
 .text-nav {
     margin-left: 20%;
     color: white;
     font-family: 'Homemade Apple', cursive;
     font-size: 2rem;
-    
+}
+.white {
+    background-color: white;
 }
 .sidenav {
     height: 300px;
@@ -28,9 +34,9 @@ p {
     font-family: 'Homemade Apple', cursive;
     font-size: 2rem;
 }
-.col {
+ /*.col {
     border: 1px solid black;
-} 
+} */
 .container {
     margin-top:20px;
 }

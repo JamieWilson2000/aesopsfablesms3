@@ -1,9 +1,90 @@
 {% extends "base.html" %}
 {% block content %}
-<h2>History</h2>
 
-<div>
-    <img src="assets/images/lions-share.jpeg" alt="homepage-image">
-</div>
+<div class="container">
+    <!--Opening Header-->
+    <div class="row">
+        <div class="col s12 grey darken-2">
+            <h2 class="text-decoration">The History of Aesops Fables</h2>
+        </div>
+    </div>
+    <!--Main feature-->
+    <div class="row">
+        <div class="col s6">
+            <img src="{{ url_for('static', filename='images/aesop-1.jpg') }}" alt="aesop portrait">
+        </div>
+        <div class="col s6 grey darken-2">
+            <p>
+                Aesop, the slave and storyteller is believed to have been alive around 620 and 564 BCE and living in
+                ancient Greece. He was known to transform situations represented by animals into feasible life lessons
+            </p>
+        </div>
+    </div>
 
-{% endblock %}
+    <div class="row">
+        <div class="col s12">
+            <img src="{{ url_for('static', filename='images/perugia.jpg') }}" alt="carving-in-Perugia">
+        </div>
+
+        <div class="row">
+            <div class="col s12 grey darken-2">
+                <p>
+                    This detail of the 13th-century Fontana Maggiore in Perugia, Italy, with the fables of The Wolf and
+                    the Crane and The Wolf and the Lamb show how respected Aesops stories have been throughout the
+                    centuries. With origins stretching as far afield as India, philosophers have been left wondering had
+                    the fables reached out across continents or was Aesop inspired by stories told by fellow slaves,
+                    sold in from foreign lands.
+                </p>
+            </div>
+        </div>
+
+        <div class="col s12 m7">
+            <div class="card horizontal grey darken-2">
+                <div class="card-image">
+                    <img src="{{ url_for('static', filename = 'images/Caxton-Fables1484.png') }}">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>The fable of the farmer and his sons from Caxton's edition, 1484</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 grey darken-2">
+                <p>The first printed version of Aesop's Fables in English was published on 26 March 1484, by William Caxton. Many others were to follow over the centuries. Until the 18th century the fables were largely put to adult use by teachers, preachers, speech-makers and moralists. It was the philosopher John Locke who first seemed to have advocated targeting children as a special audience in "Some Thoughts Concerning Education" (1693).</p>
+            </div>
+        </div>
+
+        <div class="col s12 m7">
+            <div class="card horizontal grey darken-2">
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>An early fables book by Walter Crane, 1887</p>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="{{ url_for('static', filename = 'images/Crane_title1887.jpg') }}">
+                </div>
+                
+            </div>
+        </div>
+
+        <!--Bottom Navigation buttons-->
+        <div class="row">
+            <div class="col s6 grey darken-2">
+                <a href="{{ url_for('home') }}"><span class="flow-text text-nav">Back</span></a>
+            </div>
+            <div class="col s6 grey darken-2">
+                <a href="{{ url_for('fables') }}"><span class="flow-text text-nav">Fables</span></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+
+    </div>
+
+    {% endblock %}
