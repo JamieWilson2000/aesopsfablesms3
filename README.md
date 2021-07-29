@@ -254,7 +254,9 @@ EXPLANATION OF USE OF COLORSCHEME<br>
 ## Problems and bugs experienced along the way
 
 - Problem: Image not displaying on homepage
-- Fix: 
+- Fix: I created the images folder inside of the assets folder which wasn't being recognised in the url_for string so I tried creating the folder and contents inside the static folder and that solved the problem.
+- Problem: iframe element spilling out of grid container.
+- Fix: To fix this I researched and referenced the website "https://tylerduprey-52451.medium.com/a-perfect-video-container-with-css-37fd454c5eb5 on how to create the perfect video container. Following on from that I then styled the element to suit.
 
 # Code Validations
 
@@ -274,6 +276,9 @@ EXPLANATION OF USE OF COLORSCHEME<br>
 
 
 # Credits
+
+- For information on Aesop and his fables: https://en.wikipedia.org/wiki/Aesop%27s_Fables
+- To contain the video element: https://tylerduprey-52451.medium.com/a-perfect-video-container-with-css-37fd454c5eb5
 
 
 ## Throughout the creation of this project I have referred to the following for assistance and guidance:

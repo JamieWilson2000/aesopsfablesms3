@@ -17,7 +17,6 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
-
 @app.route("/home")
 def home():
     return render_template("home.html")
@@ -26,9 +25,6 @@ def home():
 def get_details():
     members = mongo.db.members.find()
     return render_template("details.html", members=members)
-
-
-
 
 
 @app.route("/fables")
@@ -44,6 +40,11 @@ def history():
 @app.route("/login")
 def login():
     return render_template("login.html")
+
+
+@app.route("/competition")
+def competition():
+    return render_template("competition.html")
 
 
 @app.route("/register")

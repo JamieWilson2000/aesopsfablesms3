@@ -1,9 +1,60 @@
 {% extends "base.html" %}
 {% block content %}
-<h2>Most Loved Fables</h2>
 
-<div>
-    <img src="assets/images/lions-share.jpeg" alt="homepage-image">
+<div class="wrapper">
+    <div>
+        <h2 class="text-decoration"> Most Loved Fables</h2>
+    </div>
+<!--First fable-->
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/-RKB_zNCrJw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col s6 text-decoration">
+        <h4 class="vid-title">The Tortoise and the Hare</h4>
+    </div>
+<!--Second fable-->
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/o-M8rKiq35s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col s6 text-decoration">
+        <h4 class="vid-title">The Fox and the Crow</h4>
+    </div>
+   
+<!--Third fable-->
+<div class="video">
+    <iframe src="https://www.youtube.com/embed/_svBrlehmMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="col s6 text-decoration">
+    <h4 class="vid-title">The Ant and the Grasshopper</h4>
+</div>  
+
+<!--Fourth fable-->
+<div class="video">
+    <iframe src="https://www.youtube.com/embed/iPybpc-xuG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="col s6 text-decoration">
+    <h4 class="vid-title">The Lion and the Mouse</h4>
+</div> 
+
+<!--Fifth fable-->
+<div class="video">
+    <iframe src="https://www.youtube.com/embed/kG3lWRYw270" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="col s6 text-decoration">
+    <h4 class="vid-title">The Old Lion and the Fox</h4>
+</div> 
+
+<!--Bottom Navigation buttons-->
+<div class="row">
+    <div class="col s6 grey darken-2">
+        <a href="{{ url_for('home') }}"><span class="flow-text text-nav">Home</span></a>
+    </div>
+    <div class="col s6 grey darken-2">
+        <a href="{{ url_for('competition') }}"><span class="flow-text text-nav">Competition</span></a>
+    </div>
 </div>
 
+</div>
+
+</div>
 {% endblock %}
