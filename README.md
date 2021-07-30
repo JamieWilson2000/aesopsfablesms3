@@ -282,6 +282,8 @@ EXPLANATION OF USE OF COLORSCHEME<br>
 - For information on Aesop and his fables: https://en.wikipedia.org/wiki/Aesop%27s_Fables
 - To contain the video element: https://tylerduprey-52451.medium.com/a-perfect-video-container-with-css-37fd454c5eb5
 
+- Image used on quiz page collected from: https://kidsreadnow.org/lessons-from-reading-fables/
+
 
 ## Throughout the creation of this project I have referred to the following for assistance and guidance:
 
