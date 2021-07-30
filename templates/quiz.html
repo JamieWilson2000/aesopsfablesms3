@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div class="container">
+    <!--Opening Header-->
+    <div class="row">
+        <div class="col s12">
+            <img src="{{ url_for('static', filename='images/lions-share.jpeg') }}" alt="homepage-image">
+        </div>
+        <div class="col s12">
+            <h2 class="text-decoration">Quiz Time!!!</h2>
+        </div>
+    </div>
+    <!--Quiz Cards-->
+    <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/office.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Question 1</span>
+          <p>
+              When was Aesop thought to have been alive?
+          </p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+
+    <div class="row">
+        <a href="{{ url_for('history') }}" class="col s6 offset-s6"><span class="flow-text text-nav text-decoration">Enter</span></a>
+      </div>
+</div>
+
+<div>
+
+</div>
+
+{% endblock %}

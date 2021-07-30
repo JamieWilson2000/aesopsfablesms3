@@ -32,6 +32,11 @@ def fables():
     return render_template("fables.html")
 
 
+@app.route("/quiz")
+def quiz():
+    return render_template("quiz.html")    
+
+
 @app.route("/history")
 def history():
     return render_template("history.html")
