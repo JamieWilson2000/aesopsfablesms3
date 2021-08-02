@@ -61,9 +61,15 @@ def login():
                 return redirect(url_for('login'))
 
         else:
-            flash("Incoreect Username and/or Password!")
+            flash("Incorrect Username and/or Password!")
     return render_template("login.html")
 
+
+@app.route("/logout")
+def logout():
+    flash("You're logged out! Come back soon!")
+    session.pop("user")
+    return redirect(url_for('login'))
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -87,9 +93,36 @@ def register():
     return render_template("register.html")
 
 
-@app.route("/competition")
+@app.route("/competition", methods=["GET", "POST"])
 def competition():
+    if request.method == "POST":
+        competition = {
+            "fullname": request.form.get("fullname"),
+            "username": request.form.get("username").lower(),
+            "story": request.form.get("story").lower()
+            }
+        mongo.db.competition.insert_one(competition)
+
+        session['user'] = request.form.get('username').lower()
+        flash("Posted")
     return render_template("competition.html")
+
+
+# @app.route("/competition", methods=["GET", "POST"])
+# def competition():
+#     if request.method == "POST":
+#         existing_user = mongo.db.users.find_one(
+#             {"username": request.form.get("username").lower()})
+
+#         competition = {
+#             "fullname": request.form.get("fullname").lower(),
+#             "username": request.form.get("username").lower(),
+#             "story": request.form.get("story").lower()
+#             }
+#         mongo.db.competition.insert_one(competition)
+
+#         flash("Posted")
+#     return render_template("competition.html")
 
 
 if __name__ == "__main__":

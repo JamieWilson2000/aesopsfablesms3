@@ -1,9 +1,58 @@
 {% extends "base.html" %}
 {% block content %}
-<h2>Log In</h2>
 
-<div>
-    <img src="assets/images/lions-share.jpeg" alt="homepage-image">
+<div class="col s12">
+    <h2 class="text-decoration">Time To Get Creative</h2>
 </div>
+
+<div class="col s12 ">
+    <p class="text-decoration text-position">
+        You've seen and heard a handful of Aesops famous stories, now it's your turn to write your own! Have a think about what the moral should be and then write a short (maximum 1000 words) story giving an example of how your moral is important!<br>
+        If your story is fantastic then we will feature it in an upcoming feature of Members fables and your story will feature a professional illlustration by top illustrator Quentin Blake!<br>So, get thinking, get writing, and good luck!! 
+    </p>
+</div>
+<br>
+<div class="row">
+    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('competition') }}">
+        <div class="card-panel">
+
+            <!-- username field-->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-user prefix grey-text text-darken-4"></i>
+                    <input id="username" name="username" type="text" minlength="5" maxlength="20" pattern="^[a-zA-Z]{5,20}$" class="validate" required>
+                    <label for="username">Please Enter Your Full Name</label>
+                </div>
+            </div>
+
+            <!-- username field-->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-user prefix grey-text text-darken-4"></i>
+                    <input id="username" name="username" type="text" minlength="5" maxlength="15" class="validate" required>
+                    <label for="username">Please Enter Your Username</label>
+                </div>
+            </div>
+            
+            <!-- story field-->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-book-open prefix grey-text text-darken-4"></i>
+                    <input id="story" name="story" type="text" minlength="5" maxlength="1000"  class="validate" required>
+                    <label for="story">Type or paste your story in here!</label>
+                </div>
+            </div>
+
+            <!-- submit button-->
+            <div class="row">
+                <button type="submit" class="col s12 btn-large grey darken-2 text-shadow">
+                    Submit <i class="fas fa-sign-in-alt"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
 
 {% endblock %}
