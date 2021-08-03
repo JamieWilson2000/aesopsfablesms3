@@ -10,11 +10,15 @@ html, body {
     width: 100%;
 }
 .titlestyle {
-    margin-left:5%;
+    margin-left: 5%;
     font-family: 'Homemade Apple', cursive;
     font-size: 2rem;
 }
-
+.tabstyle {
+    margin-right: 5%;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2rem;
+}
 p {
     margin-bottom: 0;
     font-family: 'Libre Baskerville', serif;
@@ -109,4 +113,10 @@ img, .card-panel {
     margin: 0;
     font-family: 'Libre Baskerville', serif;
 }
+.icons {
+    margin-left: 10px;
+    font-size: 2rem;
+    color: rgb(60, 60, 60);
+}
+
 
