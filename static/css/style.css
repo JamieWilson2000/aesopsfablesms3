@@ -9,6 +9,12 @@ html, body {
 .wrapper {
     width: 100%;
 }
+.titlestyle {
+    margin-left:5%;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 2rem;
+}
+
 p {
     margin-bottom: 0;
     font-family: 'Libre Baskerville', serif;
@@ -97,8 +103,10 @@ img, .card-panel {
   }
   .flashmessage, h4 {
       line-height: 2;
+      
   } 
 .flashes, h4 {
     margin: 0;
+    font-family: 'Libre Baskerville', serif;
 }
 

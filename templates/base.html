@@ -22,7 +22,7 @@
     <header>
         <nav class="nav-extended grey darken-2">
             <div class="nav-wrapper">
-                <a href="{{ url_for('home') }}" class="brand-logo text-decoration">Aesops Fables</a>
+                <span class="titlestyle">Aesops Fables</span>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     {% if session.user%}
@@ -64,7 +64,7 @@
         {% if messages %}
         {% for message in messages %}
         <div class="row flashes">
-            <h4 class="text-decoration grey center-align">{{ message }}</h4>
+            <h4 class="text-decoration center-align">{{ message }}</h4>
         </div>
         {% endfor %}
         {% endif %}
