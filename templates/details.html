@@ -1,12 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h2>Content from details.html</h2>
+<div class="col s12">
+    <h2 class="text-decoration">{{ username }}'s Profile</h2>
+</div>
 
     {% for detail in members %}
-        {{ detail.first_name }}<br>
-        {{ detail.last_name }}<br>
-        {{ detail.email }}<br>
-        {{ detail.password }}<br>
+        {{ detail.username }}<br>
+        {{ detail.storytitle }}<br>
+        {{ detail.story }}<br>
     {% endfor %}
+
 {% endblock %}

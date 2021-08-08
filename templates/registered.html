@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div class="container">
+    <!--Opening Header-->
+    <div class="row">
+        <div class="col s12">
+            <img src="{{ url_for('static', filename='images/lions-share.jpeg') }}" alt="homepage-image">
+        </div>
+        <!-- <div class="col s12">
+            <h2 class="text-decoration">Now you're here......</h2>
+        </div> -->
+    </div>
+    <!--Introduction-->
+    <div class="row">
+        <div class="col s12 white">
+            <p>
+                You can enjoy more about Aesop and his fables!!<br>
+                Click <a href="{{ url_for('fables') }}">here</a> to watch a handful of his famous stories bought to life in these brilliant  <br>
+                Click <a href="{{ url_for('quiz') }}">here</a> to see how much you've learned by taking part in our quiz!!<br>
+                Click <a href="{{ url_for('competition') }}">here</a> to have a go at writing your own fable in our competition, the lucky winner will be featured in an upcoming feature of members fables where each chosen story will be professionally illustrated by industry legend Quentin Blake!!
+                
+            </p>
+        </div>
+    </div>
+
+    
+</div>
+
+<div>
+
+</div>
+
+{% endblock %}
