@@ -262,7 +262,7 @@ EXPLANATION OF USE OF COLORSCHEME<br>
 - Fix:
 
 - Problem: When creating the user profile page all records from the collection are being displayed rather than just the signed in user.
-- Fix: 
+- Fix:  Fixed session variables on logging into profile.
 
 # Code Validations
 

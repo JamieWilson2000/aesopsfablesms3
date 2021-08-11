@@ -51,11 +51,14 @@ def registered():
     return render_template("registered.html")
 
 
-@app.route("/profile", methods=["GET", "POST"])
-def profile():
-    info = list(mongo.db.competition.find())
+@app.route("/profile/<username>", methods=["GET", "POST"])
+def profile(username):
+    username = mongo.db.users.find_one(
+        {"username": session["user"]})["username"]
+    info = list(mongo.db.competition.find(
+        {"username": session["user"]}))
 
-    return render_template("profile.html", info=info)
+    return render_template("profile.html", username=username, info=info)
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -96,18 +99,18 @@ def register():
         if existing_user:
             flash("Username already taken!")
             return redirect(url_for('register'))
-        else:
-            register = {
+            
+        register = {
             "username": request.form.get("username").lower(),
             "email": request.form.get("email").lower(),
             "password": generate_password_hash(request.form.get("password"))
             }
         mongo.db.users.insert_one(register)
-    else:
-        session['user'] = request.form.get('username').lower()
+    
+        session['user'] = request.form.get('username')
         flash("Welcome {}, now you're here.....".format(
             request.form.get("username")))
-        #return redirect( url_for("registered")
+        return render_template("registered")
     
     return render_template("register.html")
 
