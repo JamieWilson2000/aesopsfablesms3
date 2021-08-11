@@ -257,7 +257,11 @@ EXPLANATION OF USE OF COLORSCHEME<br>
 - Fix: I created the images folder inside of the assets folder which wasn't being recognised in the url_for string so I tried creating the folder and contents inside the static folder and that solved the problem.
 - Problem: iframe element spilling out of grid container.
 - Fix: To fix this I researched and referenced the website "https://tylerduprey-52451.medium.com/a-perfect-video-container-with-css-37fd454c5eb5 on how to create the perfect video container. Following on from that I then styled the element to suit.
+
 - Problem: Pages moving from side to side.
+- Fix:
+
+- Problem: When creating the user profile page all records from the collection are being displayed rather than just the signed in user.
 - Fix: 
 
 # Code Validations

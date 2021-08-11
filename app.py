@@ -54,6 +54,7 @@ def registered():
 @app.route("/profile", methods=["GET", "POST"])
 def profile():
     info = list(mongo.db.competition.find())
+
     return render_template("profile.html", info=info)
 
 
@@ -95,21 +96,20 @@ def register():
         if existing_user:
             flash("Username already taken!")
             return redirect(url_for('register'))
-
-        register = {
-            
+        else:
+            register = {
             "username": request.form.get("username").lower(),
             "email": request.form.get("email").lower(),
             "password": generate_password_hash(request.form.get("password"))
-
             }
         mongo.db.users.insert_one(register)
-
+    else:
         session['user'] = request.form.get('username').lower()
-        flash("Welcome {}, now you're here.....".format(request.form.get("username")))
-        # return redirect( url_for("registered")
+        flash("Welcome {}, now you're here.....".format(
+            request.form.get("username")))
+        #return redirect( url_for("registered")
     
-    return render_template("registered.html")
+    return render_template("register.html")
 
 
 @app.route("/competition", methods=["GET", "POST"])
@@ -126,7 +126,7 @@ def competition():
         session['user'] = request.form.get('username')
         flash("Well done {}, best of luck !!".format(
             request.form.get("username")))
-        return redirect( url_for("profile"))
+        return redirect( url_for('profile'))
 
     return render_template("competition.html")
 

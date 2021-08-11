@@ -30,7 +30,7 @@
                     <li><a href="{{ url_for('fables') }}">Most Loved Fables</a></li>
                     <li><a href="{{ url_for('quiz') }}">Quiz Time!!!</a></li>
                     <li><a href="{{ url_for('competition') }}">Competition</a></li>
-                    <li><a href="{{ url_for('profile', username=session['user']) }}">User Profile</a></li>
+                    <li><a href="{{ url_for('profile') }}">User Profile</a></li>
                     <li><a href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}
                     <li><a href="{{ url_for('home') }}">Home</a></li>
@@ -49,7 +49,7 @@
             <li><a href="{{ url_for('fables') }}">Most Loved Fables</a></li>
             <li><a href="{{ url_for('quiz') }}">Quiz Time!!!</a></li>
             <li><a href="{{ url_for('competition') }}">Competition</a></li>
-            <li><a href="{{ url_for('profile', username=session['user']) }}">User Profile</a></li>
+            <li><a href="{{ url_for('profile') }}">User Profile</a></li>
             <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             {% else %}
             <li><a href="{{ url_for('home') }}">Home</a></li>

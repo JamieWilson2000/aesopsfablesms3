@@ -2,18 +2,26 @@
 {% block content %}
 
 
+<div>
+    <div class="col s12">
+        {% for i in info %}
+        <h2 class="text-decoration">{{ i.username }}'s Profile</h2>
+        
+    </div>
 
-<div class="col s12">
-    {% for i in info %}
-    <h2 class="text-decoration">{{ i.username }}'s Profile</h2>
+    <ul class="collapsible">
+        <li>
+            <div class="collapsible-header"><h5 class="text-decoration">{{ i.storytitle }}</h5></div>
+            <div class="collapsible-body"><span>{{ i.story }}</span></div>
+        </li>
+    </ul>
     {% endfor%}
 </div>
-
-
+<!-- 
 {% for i in info %}
 {{ i.username }}<br>
 {{ i.storytitle}}<br>
 {{ i.story }}<br>
-{% endfor%}
+{% endfor%} -->
 
 {% endblock %}
