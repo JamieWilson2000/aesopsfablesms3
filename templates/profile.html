@@ -1,17 +1,32 @@
 {% extends "base.html" %}
 {% block content %}
 
+<div class="wrapper">
 
-<div class="col s12">
-    <h2 class="text-decoration">{{ username }}'s Stories</h2>
+    <div class="col s12">
+        <h2 class="text-decoration">{{ username.capitalize() }}'s Stories</h2>
+    </div>
+
+    {% for story in stories %}
+    <ul class="collapsible">
+        <li>
+            <div class="collapsible-header">
+                
+                <h5 class="text-decoration">
+                    {{ story.storytitle }}
+                    <a class="waves-effect waves-light btn">Edit Story</a>
+                </h5>
+            </div>
+            <div class="collapsible-body">
+                <span>
+                    {{ story.story }}
+                </span>
+            </div>
+        </li>
+    </ul>
+    {% endfor %}
+
 </div>
-
-<ul class="collapsible">
-    <li>
-        <div class="collapsible-header"><h5 class="text-decoration"> {{ storytitle }}Hello World</h5></div>
-        <div class="collapsible-body"><span>Hello World</span></div>
-    </li>
-</ul>
 
 <!-- <div>
     <div class="col s12">
@@ -19,7 +34,6 @@
         <h2 class="text-decoration">{{ i.username }}'s Stories</h2>
         
     </div>
-
     <ul class="collapsible">
         <li>
             <div class="collapsible-header"><h5 class="text-decoration">{{ i.storytitle }}</h5></div>

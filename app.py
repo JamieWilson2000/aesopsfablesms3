@@ -25,10 +25,10 @@ def home():
     return render_template("home.html")
 
 
-@app.route("/details")
-def get_details():
-    members = mongo.db.competition.find()
-    return render_template("details.html", members=members)
+# @app.route("/details")
+# def get_details():
+#     members = mongo.db.competition.find()
+#     return render_template("details.html", members=members)
 
 
 @app.route("/fables")
@@ -53,12 +53,13 @@ def registered():
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
-    username = mongo.db.users.find_one(
-        {"username": session["user"]})["username"]
-    info = list(mongo.db.competition.find(
-        {"username": session["user"]}))
-
-    return render_template("profile.html", username=username, info=info)
+    username = session["user"]
+    stories = mongo.db.competition.find({"username": username})
+    print('--------------------------------')
+    print(f'Stories: {stories}')
+    print('--------------------------------')
+    return render_template(
+        "profile.html", username=username, stories=stories)
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -110,7 +111,7 @@ def register():
         session['user'] = request.form.get('username')
         flash("Welcome {}, now you're here.....".format(
             request.form.get("username")))
-        return render_template("registered")
+        return render_template("registered.html")
     
     return render_template("register.html")
 
