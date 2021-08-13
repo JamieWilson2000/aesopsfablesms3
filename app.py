@@ -137,8 +137,10 @@ def competition():
 
 @app.route("/edit_story", methods=["GET", "POST"])
 def edit_story():
+    username = session["user"]
+    stories = mongo.db.competition.find({"username": username})
     
-    return render_template("edit_story.html")
+    return render_template("edit_story.html", username=username, stories=stories)
 
 
 if __name__ == "__main__":

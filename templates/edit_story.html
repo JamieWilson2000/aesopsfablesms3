@@ -7,7 +7,8 @@
 
 <div class="col s12 ">
     <p class="text-decoration text-position">
-        Feel free to make changes to your story as many times as you like!! Don't get too carried away though, it's only a bit of fun!!
+        Feel free to make changes to your story as many times as you like!! Don't get too carried away though, it's only
+        a bit of fun!!
     </p>
 </div>
 <br>
@@ -15,35 +16,28 @@
     <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('competition') }}">
         <div class="card-panel">
 
-
-            <!--Name Field-->
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-user prefix grey-text text-darken-4"></i>
-                    <input id="username" name="username" type="text" minlength="5" maxlength="15" class="validate"
-                        required>
-                    <label for="username">Please Enter Your Name</label>
-                </div>
-            </div>
-
+            {% for story in stories %}
             <!-- story title field-->
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-book-open prefix grey-text text-darken-4"></i>
-                    <input id="storytitle" name="storytitle" type="text" minlength="5" maxlength="50" class="validate" required>
-                    <label for="storytitle">What Is The Name Of Your Story!</label>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-book-open prefix grey-text text-darken-4"></i>
+                        <input id="storytitle" name="storytitle" type="text" minlength="5" maxlength="50"
+                            class="validate" required>
+                        <label for="storytitle">{{ story.storytitle}}</label>
+                    </div>
                 </div>
-            </div>
 
-            <!-- story field-->
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-book-open prefix grey-text text-darken-4"></i>
-                    <input id="story" name="story" type="text" minlength="5" maxlength="1000" class="validate" required>
-                    <label for="story">Type or paste your story in here!</label>
+                <!-- story field-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-book-open prefix grey-text text-darken-4"></i>
+                        <input id="story" name="story" type="text" minlength="5" maxlength="1000" class="validate"
+                            required>
+                        <label for="story">{{ story.story }}</label>
+                    </div>
                 </div>
-            </div>
-
+                
+            
             <!-- submit button-->
             <div class="row">
                 <button type="submit" class="col s12 btn-large grey darken-2 text-shadow">
@@ -53,7 +47,7 @@
         </div>
     </form>
 </div>
-
+{% endfor %}
 
 
 {% endblock %}
