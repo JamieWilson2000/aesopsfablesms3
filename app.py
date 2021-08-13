@@ -38,7 +38,7 @@ def fables():
 
 @app.route("/quiz")
 def quiz():
-    return render_template("quiz.html")    
+    return render_template("quiz.html")   
 
 
 @app.route("/history")
@@ -81,7 +81,7 @@ def login():
         else:
             flash("Incorrect Username and/or Password!")
             return redirect(url_for('login'))
-            
+
     return render_template("login.html")
 
 
@@ -100,54 +100,61 @@ def register():
         if existing_user:
             flash("Username already taken!")
             return redirect(url_for('register'))
-            
+
         register = {
             "username": request.form.get("username").lower(),
             "email": request.form.get("email").lower(),
             "password": generate_password_hash(request.form.get("password"))
             }
         mongo.db.users.insert_one(register)
-    
+
         session['user'] = request.form.get('username')
         flash("Welcome {}, now you're here.....".format(
             request.form.get("username")))
         return render_template("registered.html")
-    
+
     return render_template("register.html")
 
 
 @app.route("/competition", methods=["GET", "POST"])
 def competition():
     if request.method == "POST":
-        stories = mongo.db.competition.find_one()
+        # stories = mongo.db.competition.find_one()
         competition = {
-            "username": request.form.get("username").lower(),
-            "storytitle": request.form.get("storytitle").lower(),
-            "story": request.form.get("story").lower()
+            "username": session['user'],
+            "storytitle": request.form.get("storytitle"),
+            "story": request.form.get("story")
             }
         mongo.db.competition.insert_one(competition)
 
-        session['user'] = request.form.get('username')
-        flash("Well done {}, best of luck !!".format(
-            request.form.get("username")))
-        return redirect( url_for('profile') )
+        flash("Well done {}, best of luck !!".format(session['user']))
+        return redirect(url_for('profile', username=session['user']))
 
     return render_template("competition.html")
 
 
-@app.route("/edit_story", methods=["GET", "POST"])
-def edit_story():
+@app.route("/edit_story/<story_id>", methods=["GET", "POST"])
+def edit_story(story_id):
+    story = mongo.db.competition.find_one({"_id": ObjectId(story_id)})
     if request.method == "POST":
-        stories = mongo.db.competition.find_one()
+        # stories = mongo.db.competition.find_one()
         competition = {
-            "story": request.form.get("story").lower()
+            "username": session['user'],
+            "storytitle": request.form.get("storytitle"),
+            "story": request.form.get("story")
             }
-        mongo.db.competition.append_one(competition)
+        mongo.db.competition.update({"_id": ObjectId(story_id)}, competition)
+        flash("Well done {}, best of luck !!".format(session['user']))
+        return redirect(url_for('profile', username=session['user']))
 
-    username = session["user"]
-    stories = mongo.db.competition.find({"username": username})
-    
-    return render_template("edit_story.html", username=username, stories=stories)
+    # username = session["user"]
+    # stories = mongo.db.competition.find({"username": username})
+
+    # return render_template("edit_story.html", username=username)
+    return render_template(
+        "edit_story.html",
+        username=session['user'],
+        story=story)
 
 
 if __name__ == "__main__":

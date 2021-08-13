@@ -1,48 +1,48 @@
 {% extends "base.html" %}
 {% block content %}
-
+​
 <div class="col s12">
     <h2 class="text-decoration">Make Changes To Your Story</h2>
 </div>
-
-<div class="col s12 ">
+​
+<div class="col s12">
     <p class="text-decoration text-position">
-        Feel free to make changes to your story as many times as you like!! Don't get too carried away though, it's only
-        a bit of fun!!
+        Feel free to make changes to your story as many times as you like!! Don't get too carried away though,
+	it's only a bit of fun!!
     </p>
 </div>
 <br>
 <div class="row">
-    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('edit_story') }}">
+    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('edit_story', story_id=story._id) }}">
         <div class="card-panel">
-
-            {% for story in stories %}
+​
             <!-- story title field-->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <h5 class="text-decoration">{{ story.storytitle}}</h5>
-                    </div>
-                </div>
-
-                <!-- story field-->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-edit prefix grey-text text-darken-4"></i>
-                    <input id="story" name="story" type="text" minlength="5" maxlength="1000" value="{{ story.story }}" class="validate" required>
+                    <i class="fas fa-book-open prefix grey-text text-darken-4"></i>
+                    <input id="storytitle" name="storytitle" value="{{ story.storytitle }}" type="text" minlength="5" maxlength="50" class="validate" required>
+                    <label for="storytitle">What Is The Name Of Your Story!</label>
                 </div>
             </div>
-                
-            
+​
+            <!-- story field-->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-book-open prefix grey-text text-darken-4"></i>
+                    <input id="story" name="story" value="{{ story.story }}" type="text" minlength="5" maxlength="1000" class="validate" required>
+                    <label for="story">Type or paste your story in here!</label>
+                </div>
+            </div>
+​
             <!-- submit button-->
             <div class="row">
                 <button type="submit" class="col s12 btn-large grey darken-2 text-shadow">
-                    Save Changes <i class="fas fa-sign-in-alt"></i>
+                    Save Changes <i class="fas fa-edit"></i>
                 </button>
             </div>
         </div>
     </form>
 </div>
-{% endfor %}
-
-
+​
+​
 {% endblock %}
