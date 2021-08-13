@@ -24,6 +24,12 @@ p {
     font-family: 'Libre Baskerville', serif;
     font-size:medium;
 }
+h5 {
+    width: 100%;
+}
+.btn {
+    margin-right: 20px;
+} 
 .text-decoration {
     color: black;
     line-height: 2em;

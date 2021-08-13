@@ -11,12 +11,13 @@
     <ul class="collapsible">
         <li>
             <div class="collapsible-header">
-                
-                <h5 class="text-decoration">
-                    {{ story.storytitle }}
-                    <a class="waves-effect waves-light btn">Edit Story</a>
+                <h5 class="text-decoration center-align">
+                    {{ story.storytitle }}<br>
+                    <a href="{{ url_for('edit_story') }}" class="waves-effect waves-light btn">Edit Story</a>
                 </h5>
+                
             </div>
+            
             <div class="collapsible-body">
                 <span>
                     {{ story.story }}
@@ -27,26 +28,5 @@
     {% endfor %}
 
 </div>
-
-<!-- <div>
-    <div class="col s12">
-        {% for i in info %}
-        <h2 class="text-decoration">{{ i.username }}'s Stories</h2>
-        
-    </div>
-    <ul class="collapsible">
-        <li>
-            <div class="collapsible-header"><h5 class="text-decoration">{{ i.storytitle }}</h5></div>
-            <div class="collapsible-body"><span>{{ i.story }}</span></div>
-        </li>
-    </ul>
-    {% endfor%}
-</div> -->
-<!-- 
-{% for i in info %}
-{{ i.username }}<br>
-{{ i.storytitle}}<br>
-{{ i.story }}<br>
-{% endfor%} -->
 
 {% endblock %}

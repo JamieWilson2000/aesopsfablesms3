@@ -261,8 +261,10 @@ EXPLANATION OF USE OF COLORSCHEME<br>
 - Problem: Pages moving from side to side.
 - Fix:
 
-- Problem: When creating the user profile page all records from the collection are being displayed rather than just the signed in user.
+- Problem: When creating the Your Stories page all records from the collection are being displayed rather than just the signed in user.
 - Fix:  Fixed session variables on logging into profile.
+- Problem: Could not display other values to the Your Stories page using Jinja.
+- Fix: Discovered that previously I had made an amendment to the username field direct in MongoDB so the field that the code was looking for no longer existed. After rolling back to the original entry the values display to the page.
 
 # Code Validations
 

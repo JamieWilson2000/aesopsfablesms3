@@ -135,6 +135,12 @@ def competition():
     return render_template("competition.html")
 
 
+@app.route("/edit_story", methods=["GET", "POST"])
+def edit_story():
+    
+    return render_template("edit_story.html")
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
     port=int(os.environ.get("PORT")),
