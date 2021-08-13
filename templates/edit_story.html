@@ -13,35 +13,30 @@
 </div>
 <br>
 <div class="row">
-    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('competition') }}">
+    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('edit_story') }}">
         <div class="card-panel">
 
             {% for story in stories %}
             <!-- story title field-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <i class="fas fa-book-open prefix grey-text text-darken-4"></i>
-                        <input id="storytitle" name="storytitle" type="text" minlength="5" maxlength="50"
-                            class="validate" required>
-                        <label for="storytitle">{{ story.storytitle}}</label>
+                        <h5 class="text-decoration">{{ story.storytitle}}</h5>
                     </div>
                 </div>
 
                 <!-- story field-->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-book-open prefix grey-text text-darken-4"></i>
-                        <input id="story" name="story" type="text" minlength="5" maxlength="1000" class="validate"
-                            required>
-                        <label for="story">{{ story.story }}</label>
-                    </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-edit prefix grey-text text-darken-4"></i>
+                    <input id="story" name="story" type="text" minlength="5" maxlength="1000" value="{{ story.story }}" class="validate" required>
                 </div>
+            </div>
                 
             
             <!-- submit button-->
             <div class="row">
                 <button type="submit" class="col s12 btn-large grey darken-2 text-shadow">
-                    Submit <i class="fas fa-sign-in-alt"></i>
+                    Save Changes <i class="fas fa-sign-in-alt"></i>
                 </button>
             </div>
         </div>

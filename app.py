@@ -130,13 +130,20 @@ def competition():
         session['user'] = request.form.get('username')
         flash("Well done {}, best of luck !!".format(
             request.form.get("username")))
-        return redirect( url_for('profile'))
+        return redirect( url_for('profile') )
 
     return render_template("competition.html")
 
 
 @app.route("/edit_story", methods=["GET", "POST"])
 def edit_story():
+    if request.method == "POST":
+        stories = mongo.db.competition.find_one()
+        competition = {
+            "story": request.form.get("story").lower()
+            }
+        mongo.db.competition.append_one(competition)
+
     username = session["user"]
     stories = mongo.db.competition.find({"username": username})
     

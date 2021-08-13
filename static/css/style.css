@@ -30,6 +30,9 @@ h5 {
 .btn {
     margin-right: 20px;
 } 
+.input-field {
+    text-align: center;
+}
 .text-decoration {
     color: black;
     line-height: 2em;
