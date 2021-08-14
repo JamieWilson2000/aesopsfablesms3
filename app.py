@@ -144,7 +144,7 @@ def edit_story(story_id):
             "story": request.form.get("story")
             }
         mongo.db.competition.update({"_id": ObjectId(story_id)}, competition)
-        flash("Well done {}, best of luck !!".format(session['user']))
+        flash("Ok {}, your changes have been saved !!".format(session['user']))
         return redirect(url_for('profile', username=session['user']))
 
     return render_template(
