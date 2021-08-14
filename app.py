@@ -137,7 +137,7 @@ def competition():
 def edit_story(story_id):
     story = mongo.db.competition.find_one({"_id": ObjectId(story_id)})
     if request.method == "POST":
-        # stories = mongo.db.competition.find_one()
+        
         competition = {
             "username": session['user'],
             "storytitle": request.form.get("storytitle"),
@@ -147,14 +147,17 @@ def edit_story(story_id):
         flash("Well done {}, best of luck !!".format(session['user']))
         return redirect(url_for('profile', username=session['user']))
 
-    # username = session["user"]
-    # stories = mongo.db.competition.find({"username": username})
-
-    # return render_template("edit_story.html", username=username)
     return render_template(
         "edit_story.html",
         username=session['user'],
         story=story)
+
+
+@app.route("/delete_story/<story_id>")
+def delete_story(story_id):
+    mongo.db.competition.remove({"_id": ObjectId(story_id)})
+    flash("Story successfully deleted")
+    return redirect(url_for('profile', username=session['user']))
 
 
 if __name__ == "__main__":

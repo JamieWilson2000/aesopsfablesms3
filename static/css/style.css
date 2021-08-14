@@ -37,10 +37,13 @@ h5 {
     text-align: center;
 }
 .text-decoration {
-    /* color: black; */
+    color: black;
     line-height: 2em;
     text-shadow: 2px 2px 2px grey;
     margin-left: 0;
+}
+.text-white {
+    color: white;
 }
 .nav-but {
     margin-top: 10px;
