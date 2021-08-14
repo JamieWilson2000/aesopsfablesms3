@@ -12,11 +12,13 @@
         <li>
             <div class="collapsible-header">
                 <h5 class="text-decoration center-align">
-                    {{ story.storytitle }}<br>
-                    <a href="{{ url_for('edit_story', story_id=story._id) }}" class="waves-effect waves-light btn">Edit Story</a>
+                    Click here to read "{{ story.storytitle }}"<br>
+                    <a href="{{ url_for('edit_story', story_id=story._id) }}" class="waves-effect waves-light btn">Edit</a>
+                    <a href="{{ url_for('edit_story', story_id=story._id) }}" class="waves-effect waves-light btn red">Delete</a>
+                    
                 </h5>
-                
             </div>
+            
             
             <div class="collapsible-body">
                 <span>

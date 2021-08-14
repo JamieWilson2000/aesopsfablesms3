@@ -11,19 +11,26 @@
     <!--Main feature-->
     <div class="row">
         <div class="col s6">
-            <img src="{{ url_for('static', filename='images/aesop-1.jpg') }}" alt="aesop portrait">
+            <img src="{{ url_for('static', filename='images/aesop-1.jpg') }}" class="shadow" alt="aesop portrait">
         </div>
         <div class="col s6">
             <p>
                 Aesop, the slave and storyteller is believed to have been alive around 620 and 564 BCE and living in
-                ancient Greece. He was known to transform situations represented by animals into feasible life lessons
+                ancient Greece. 
+            </p>
+            <p class="hide-on-small-only">
+                He was known to transform situations represented by animals into feasible life lessons.
+                Scattered details of Aesop's life can be found in ancient sources, including Aristotle, Herodotus, and Plutarch. An ancient literary work called The Aesop Romance tells an episodic, probably highly fictional version of his life, including the traditional description of him as a strikingly ugly slave who through his cleverness acquired freedom and became an adviser to kings and city-states.
+            </p>
+            <p class="hide-on-med-and-down">
+                Aesop may not have written his fables. The Aesop Romance claims that he wrote them down and deposited them in the library of Croesus; Herodotus calls Aesop a "writer of fables" and Aristophanes speaks of "reading" Aesop, but that might simply have been a compilation of fables ascribed to him. 
             </p>
         </div>
     </div>
 
     <div class="row">
         <div class="col s12">
-            <img src="{{ url_for('static', filename='images/perugia.jpg') }}" alt="carving-in-Perugia">
+            <img src="{{ url_for('static', filename='images/perugia.jpg') }}" class="shadow" alt="carving-in-Perugia">
         </div>
 
         <div class="row">
@@ -40,7 +47,7 @@
 
         <div class="col s12 m7">
             <div class="card horizontal">
-                <div class="card-image">
+                <div class="card-image caxton-img">
                     <img src="{{ url_for('static', filename = 'images/caxton-fables1484.png') }}">
                 </div>
                 <div class="card-stacked">
@@ -73,13 +80,8 @@
 
         <!--Bottom Navigation buttons-->
         <div class="row">
-            <div class="col s6">
-                <a class="nav-but" href="{{ url_for('home') }}"><span class="flow-text text-nav">Back</span></a>
-            </div>
-            <div class="col s6">
-                <a href="{{ url_for('fables') }}"><span class="flow-text text-nav">Fables</span></a>
-            </div>
-        </div>
+            <a href="{{ url_for('history') }}" class="col s12"><span class="flow-text text-nav text-decoration">Back to the top...</span></a>
+          </div>
 
     </div>
 
