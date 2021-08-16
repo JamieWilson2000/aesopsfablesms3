@@ -138,7 +138,7 @@ img {
       
   } 
 .flashes, h4 {
-    margin: 0;
+    margin: 0px;
     font-family: 'Libre Baskerville', serif;
 }
 .icons {
@@ -150,6 +150,10 @@ img {
     position:absolute;
     margin-top: 10px;
     right: 10%;
+}
+.back-nav {
+    text-align: center;
+    font-family: 'Homemade Apple', cursive;
 }
 .footer {
     width: 100%;

@@ -265,6 +265,8 @@ EXPLANATION OF USE OF COLORSCHEME<br>
 - Fix:  Fixed session variables on logging into profile.
 - Problem: Could not display other values to the Your Stories page using Jinja.
 - Fix: Discovered that previously I had made an amendment to the username field direct in MongoDB so the field that the code was looking for no longer existed. After rolling back to the original entry the values display to the page.
+- Problem: Could not display flash message on Your Stories page informing user that they had not submitted a story yet.
+- Fix: Discovered that I wasn't checking if the collection existed in the correct method so adopted the count() method to determine if the corresponding collection existed, if it did exist then go ahead and display the story, if it doesn't then display the flash message with the relevant message. 
 
 # Code Validations
 

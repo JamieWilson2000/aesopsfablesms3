@@ -6,7 +6,7 @@
     <div class="col s12">
         <h2 class="text-decoration">{{ username.capitalize() }}'s Stories</h2>
     </div>
-
+       
     {% for story in stories %}
     <ul class="collapsible">
         <li>
@@ -21,7 +21,9 @@
                           <p>Are you sure you want to delete the story??</p>
                         </div>
                         <div class="modal-footer">
+                            <a href="{{ url_for('profile', username=session['user']) }}" class="waves-effect waves-light btn blue">NO!!!!!</a>
                             <a href="{{ url_for('delete_story', story_id=story._id) }}" class="waves-effect waves-light btn red">Delete</a>
+                            
                         </div>
                       </div>
                 </h5>
