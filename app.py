@@ -55,11 +55,17 @@ def registered():
 def profile(username):
     username = session["user"]
     stories = mongo.db.competition.find({"username": username})
-    print('--------------------------------')
-    print(f'Stories: {stories}')
-    print('--------------------------------')
-    return render_template(
-        "profile.html", username=username, stories=stories)
+
+    if stories.count()== 0:
+        flash("You haven't written any stories yet!!")
+        flash("Head over to the competition page to submit a story!")
+        return render_template("profile.html", username=username)
+    else:
+        return render_template(
+            "profile.html", username=username, stories=stories)
+        
+        
+        
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -119,12 +125,13 @@ def register():
 @app.route("/competition", methods=["GET", "POST"])
 def competition():
     if request.method == "POST":
+
         # stories = mongo.db.competition.find_one()
         competition = {
-            "username": session['user'],
-            "storytitle": request.form.get("storytitle"),
-            "story": request.form.get("story")
-            }
+        "username": session['user'],
+        "storytitle": request.form.get("storytitle"),
+        "story": request.form.get("story")
+        }
         mongo.db.competition.insert_one(competition)
 
         flash("Well done {}, best of luck !!".format(session['user']))

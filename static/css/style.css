@@ -151,5 +151,15 @@ img {
     margin-top: 10px;
     right: 10%;
 }
+.footer {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    
+}
+.right {
+    margin-left:10px;
+    text-align:center;
+}
 
 
