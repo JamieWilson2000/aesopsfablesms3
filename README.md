@@ -257,16 +257,14 @@ EXPLANATION OF USE OF COLORSCHEME<br>
 - Fix: I created the images folder inside of the assets folder which wasn't being recognised in the url_for string so I tried creating the folder and contents inside the static folder and that solved the problem.
 - Problem: iframe element spilling out of grid container.
 - Fix: To fix this I researched and referenced the website "https://tylerduprey-52451.medium.com/a-perfect-video-container-with-css-37fd454c5eb5 on how to create the perfect video container. Following on from that I then styled the element to suit.
-
-- Problem: Pages moving from side to side.
-- Fix:
-
 - Problem: When creating the Your Stories page all records from the collection are being displayed rather than just the signed in user.
 - Fix:  Fixed session variables on logging into profile.
 - Problem: Could not display other values to the Your Stories page using Jinja.
 - Fix: Discovered that previously I had made an amendment to the username field direct in MongoDB so the field that the code was looking for no longer existed. After rolling back to the original entry the values display to the page.
 - Problem: Could not display flash message on Your Stories page informing user that they had not submitted a story yet.
 - Fix: Discovered that I wasn't checking if the collection existed in the correct method so adopted the count() method to determine if the corresponding collection existed, if it did exist then go ahead and display the story, if it doesn't then display the flash message with the relevant message. 
+- Problem: Discovered that when deleting a story from the Your Stories page, the wrong story is being deleted.
+- Fix: I realized that I hadn't targeted any related values to the modal button so to fix this I added a jinja reference to the selected _id within the modal buttons data target and the modals id field.
 
 # Code Validations
 
@@ -288,9 +286,12 @@ EXPLANATION OF USE OF COLORSCHEME<br>
 # Credits
 
 - For information on Aesop and his fables: https://en.wikipedia.org/wiki/Aesop%27s_Fables
+
 - To contain the video element: https://tylerduprey-52451.medium.com/a-perfect-video-container-with-css-37fd454c5eb5
 
 - Image used on quiz page collected from: https://kidsreadnow.org/lessons-from-reading-fables/
+
+- For help fixing a problem regarding the iframe elements I referenced: "https://tylerduprey-52451.medium.com/a-perfect-video-container-with-css-37fd454c5eb5
 
 
 ## Throughout the creation of this project I have referred to the following for assistance and guidance:
