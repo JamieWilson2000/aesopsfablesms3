@@ -25,13 +25,16 @@
 
 - The first aim of this project is to create an interesting website, reflecting on the fables written by greek storyteller Aesop. Myself, coming from a non religious background and being raised in a multi-denominational school with no religious education, the fables were a way to teach children the morals adhered to in life from a completely fictional and light-hearted perspective. For some, Aesops Fables will be completely new to them, for others it will be a chance to reflect on the stories read and taught to them throughout their childhood.
 
-- The second aim of the project is to encourage the creativity of the user visiting the site to write their own fable. Each new story would be read and considered for featuring within our selection of fables. Since this is a mock-up website the purpose of this aspect is purely to demonstrate the ability to submit a story / fable and as such, obviously the tale would not be featuring in the fable selection. 
+- The second aim of the project is to encourage the user to register so as to gain access to more of the sites content. Content should be varied enough to make the user feel it's  a worthwhile exercise registering.
+
+- The third aim of the project is to encourage the creativity of the registered user visiting the site to write their own fable. In theory, each new story would be read and considered for featuring within our selection of fables. Since this is a mock-up website the purpose of this aspect is purely to demonstrate the ability to submit a story / fable and as such, obviously the tale would not be featuring in the fable selection. 
 
 # This site should appeal to and be suited for : 
 
 - Someone who grew up learning using Aesop Fables.
 - Someone who has recently learnt and has an interest in the Fables. 
 - Someone who has an interest in Greece, it's history, and is looking to expand on their knowledge of Aesop.
+- Someone who has an interest in writing short stories.
 - An educational body (schools, writing organisations etc) who use or have an interest in including Aesops fables into the current learning curriculum. 
 <br>
 
@@ -44,8 +47,7 @@
 <br>
 
 - As a returning visitor to the site I would want to log in to my account to access my personal details and any interactivity I have taken part in.
-- As a returning visitor I would want to access my profile to check results of competitions entered.
-- As a returning visitor I would want to be able to contact the administrators of the site to ask questions, suggest new ideas, complain regarding content, etc.
+- As a returning visitor I would want to access my profile to access, edit and delete any stories I have submitted.
 
 - User Conclusion
     - After visiting the site I would like to feel that I have enjoyed a good user experience interacting with the site.
@@ -59,11 +61,34 @@
 
 - When planning out this site I thought it important to implement the same 5 planes of UX that I had used when designing my Milestone Project 1 and 2. Doing this makes the process an easier task.
 
-- ## <u>The strategy</u>
+## <u>The strategy</u>
+
+- In planning out this website I specifically wanted to target users who fell into these brackets:
+    - Those who are familiar with the fables of Aesop and wanted to revisit the stories for themselves.
+    - Those who are familiar with the fables of Aesop and wanted to share them with friends, family etc.
+    - Those working within an educational body wanting to share the fables as part of their curriculum.
+    - Those who would use the site as an informative and interactive platform for children to learn the fables through reading the history aspects, test their knowledge, and be encouraged to become creative in writing their own tales.
+    - Those who have stumbled across Aesop and want to learn more.
+    - Those with an interest in Ancient Greece and wish to view relevant information.
+
+- As a developer I would want a site that was easily maintainable and easy to update with new content as the site progressed.
+
     
-- ## <u>The Scope</u>
-    
-- ## <u>The Structure</u>
+## <u>The Scope</u>
+
+- Based on the strategy above I began to work on the scope of the site taking into consideration the following factors:
+    - The user should be able to:
+        - Navigate easily around the entire site in a clear and effective manner.
+        - Have the navigation areas clearly marked with full text on larger screens and the standard familiar collapsible navigational button on smaller screens.
+        - Find the site attractive with text elements easy to read and images to be clear, and interesting in appearance.
+        - Feel interested enough to want to register with the site to gain the extra, exclusive content.
+        - Register with minimal fuss and only have to supply the absolute necessary information to create an account. 
+        - Once registered, be content that the process was worthwhile and the additional content is varied and not just more text based information.
+        - Find aspects of the site appealing enough that they would want to return.
+        - Become interested enough that they themselves would want to return to the site to submit stories that they've written and submitted to be displayed in a future feature.
+        - Introduce the site within educational departments encouraging children to interact with the site, watching stories and submitting their own.
+
+## <u>The Structure</u>
     
 - ## <u>The Skeleton</u>
     

@@ -25,7 +25,7 @@
                 <span class="titlestyle">Aesops Fables</span>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
-                    {% if session.user%}
+                    {% if session.user %}
                     <li><a href="{{ url_for('history') }}">History</a></li>
                     <li><a href="{{ url_for('fables') }}">Most Loved Fables</a></li>
                     <li><a href="{{ url_for('quiz') }}">Quiz Time!!!</a></li>
@@ -44,7 +44,7 @@
         </nav>
 
         <ul class="sidenav" id="mobile-demo">
-            {% if session.user%}
+            {% if session.user %}
             <li><a href="{{ url_for('history') }}">History</a></li>
             <li><a href="{{ url_for('fables') }}">Most Loved Fables</a></li>
             <li><a href="{{ url_for('quiz') }}">Quiz Time!!!</a></li>

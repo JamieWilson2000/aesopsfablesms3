@@ -36,6 +36,9 @@ h5 {
 .input-field {
     text-align: center;
 }
+.left {
+    margin-left: 10%;
+}
 .text-decoration {
     color: black;
     line-height: 2em;
@@ -134,7 +137,7 @@ img {
       font-family: 'Homemade Apple', cursive; 
   }
   .flashmessage, h4 {
-      line-height: 2;
+    line-height: 2;
       
   } 
 .flashes, h4 {
@@ -151,7 +154,7 @@ img {
     margin-top: 10px;
     right: 10%;
 }
-.back-nav {
+.back-nav, .error {
     text-align: center;
     font-family: 'Homemade Apple', cursive;
 }

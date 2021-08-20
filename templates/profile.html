@@ -2,11 +2,11 @@
 {% block content %}
 
 <div class="wrapper">
-
+    {% if stories %}
     <div class="col s12">
         <h2 class="text-decoration">{{ username.capitalize() }}'s Stories</h2>
     </div>
-       
+    {% endif %}  
     {% for story in stories %}
     <ul class="collapsible">
         <li>
