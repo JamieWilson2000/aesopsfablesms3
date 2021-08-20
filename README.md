@@ -1,9 +1,9 @@
 # <u>Milestone Project 3: Aesops Fables</u>
 
-![site screenshot]()
+![site screenshot](static/images/amiresponsive.png)
  
 
-# [Link to visit ""]()
+# Click link to visit ["Aesops Fables"](https://aesops-fables-ms3.herokuapp.com/)
 
 # Contents
 
@@ -89,6 +89,55 @@
         - Introduce the site within educational departments encouraging children to interact with the site, watching stories and submitting their own.
 
 ## <u>The Structure</u>
+
+- I planned on using set elements throughout the project so as to keep the sense of familiarity running regardless of the content on the page. Therefore I incorporated:
+    - A fixed Navbar, present on all screens, displaying the relevant options to the user at their point of the journey,
+
+    - ![openingnavbar](static/images/openingnavbar.png)
+    - ![loggedinnavbar](static/images/loggedinnavbar.png)
+
+    - A floating footer bar featuring a link to the original Aesops fables page on Wikipedia and on a personal level links to my Github repositories and LinkedIn pages along with my name.
+
+    - ![pagefooter](static/images/footer.png)
+
+- The opening page will welcome the user to the site, explain the sites purpose and encourage the user to login to access more content. The user should notice the option to log in has been highlighted in the body of welcoming text but failing that the option to log in is also displayed within the Nav bar.
+
+    - ![markedtext](static/images/markedtext.png)
+    - ![markedlogin](static/images/markedlogin.png)
+
+- If the user chooses not to log in then the options are limited and the user will only have access to the history page outlining certain aspects of Aesops life and stories. 
+- If the user chooses to log in to the site they will be redirected to a log in page. If the user has never visited the site before then they will be required to register with the site. This is suggested at the bottom of the log in page.
+
+    ![markedregistration](static/images/markedregistration.png)
+
+- For the registration aspect I will have created a collection in a database within MongoDB where the information regarding the users name, email, and password will be safely stored. The password will be encrypted using the Werkzeug security password hash method.
+- After registering, the user will be directed to a new screen with the new content made available to them.
+    - ![markeduserscreen](static/images/markeduserscreen.png)
+
+- For the competition aspect I will have created a collection in a database within MongoDB where the content of the users stories will be stored. This information will include the title and the story itself. The information will be connected to the registered user.
+- From here the user can access the exclusive content including a quiz and a selection of Aesop Fables cartoons. The user will also have the option to submit a story of their own to be considered in a 'future feature' on the site. 
+- If the user clicks on the 'Your Stories' tab before submitting a story then they will be greeted with the information that they haven't submitted any stories at this stage and to select the competition tab to do so.
+    - ![emptystorygreet](static/images/emptystorygreet.png)
+
+- If the user wishes to submit a story then after clicking on the competition tab, they will be greeted with a brief explanation of the purpose of the page, and a brief explanation of the overall 'prize' offered if the story is deemed good enough to feature in a 'future feature'.
+- Below this is the input fields where the user can write or paste in the story's title and the body of the story.
+    - ![compscreen](static/images/competitionscreen.png)
+
+- Once a story has been submitted the content of the 'Your Stories' page now changes to reflect the new content.
+    - ![userstorypage](static/images/userstorypage.png)
+
+- I have opted to use Materializes' collapsible element for displaying the user stories. Reason for this is that if the user chooses to submit more than story, the page will become extremely long, bulky and tedious to scroll through for the user. This way only the title will be displayed and if the user wishes to view the story then they can do so by simply expanding the title to reveal the title.
+
+- Along with the title of the story I will have included an 'Edit' button and a 'Delete' button.
+- Upon selecting the edit button the user will be redirected to an edit page wherein the user can make changes to the title and/or the story and save those changes to his/her profile 
+    - ![editbutton](static/images/markededitbutton.png)
+    - ![editpage](static/images/editpage.png)
+
+- Should the user decide that they no longer wish to keep that story then they can select the delete button.
+- Once the delete button has been selected a modal will appear asking if the user is sure they wish to delete the story. Here the user will have the option to either cancel the deletion or select the delete button again removing the story from the database collection.
+    - ![deletebutton](static/images/deletebutton.png)
+    - ![deletemodal](static/images/deletemodal.png)
+- If the user selects the 'No!!!' button then they will be redirected back to the main 'Your Stories' page.
     
 - ## <u>The Skeleton</u>
     

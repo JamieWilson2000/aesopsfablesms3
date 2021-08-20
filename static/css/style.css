@@ -58,6 +58,11 @@ h5 {
     font-family: 'Homemade Apple', cursive;
     font-size: 1.5rem;
 }
+.sidenav li > a {
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5rem;
+}
 .white {
     background-color: white;
 }
