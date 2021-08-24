@@ -95,10 +95,12 @@
 
     - ![openingnavbar](static/images/openingnavbar.png)
     - ![loggedinnavbar](static/images/loggedinnavbar.png)
+---
 
-    - A floating footer bar featuring a link to the original Aesops fables page on Wikipedia and on a personal level links to my Github repositories and LinkedIn pages along with my name.
+- A floating footer bar featuring a link to the original Aesops fables page on Wikipedia and on a personal level links to my Github repositories and LinkedIn pages along with my name.
 
     - ![pagefooter](static/images/footer.png)
+---
 
 - The opening page will welcome the user to the site, explain the sites purpose and encourage the user to login to access more content. The user should notice the option to log in has been highlighted in the body of welcoming text but failing that the option to log in is also displayed within the Nav bar.
 
@@ -113,6 +115,8 @@
 - For the registration aspect I will have created a collection in a database within MongoDB where the information regarding the users name, email, and password will be safely stored. The password will be encrypted using the Werkzeug security password hash method.
 - After registering, the user will be directed to a new screen with the new content made available to them.
     - ![markeduserscreen](static/images/markeduserscreen.png)
+
+---
 
 - For the competition aspect I will have created a collection in a database within MongoDB where the content of the users stories will be stored. This information will include the title and the story itself. The information will be connected to the registered user.
 - From here the user can access the exclusive content including a quiz and a selection of Aesop Fables cartoons. The user will also have the option to submit a story of their own to be considered in a 'future feature' on the site. 
@@ -138,9 +142,63 @@
     - ![deletebutton](static/images/deletebutton.png)
     - ![deletemodal](static/images/deletemodal.png)
 - If the user selects the 'No!!!' button then they will be redirected back to the main 'Your Stories' page.
+---
+- The 'Quiz Time' page will feature 5 cards, each with a question and multiple answers. 
+- After thinking on the answer to the question the user will select the 'Click to reveal' portion of the card, revealing the correct answer to the question.
+    - ![markedquizreveal](static/images/markedquiz.png)
+
+- If the user chooses to, he/she can return the card back to the question for someone else to have a guess simply by clicking on the closing X on the top right of the card.
+    - ![closingx](static/images/markedclosequiz.png)
+
+---
+- The 'Most Loved Fables' page will feature 5 stories portrayed in cartoon format using embedded code from Youtube. The only interaction with these elements are to simply select to play the videos.
+
+    - ![videoplaybutton](static/images/markedvideo.png)
+
+---
+
+- The History page will not feature/require any user interaction. Textual information on the page will be subject to the size of the device the user is using to access the site.
+
+---
+
+- To add to the navigational aspect, I have included a 'back to the top' link on the Home, History, Most loved fables, and the Quiz time pages which is located at the bottom of each long scroll page.
+
+    - ![markedbacktotop](static/images/markedtotop.png)
+
+---
+
+
+
     
-- ## <u>The Skeleton</u>
+- ## <u>From the Skeleton to the Surface</u>
+
+- The idea of the bare bones of the project were sketched out in wireframes using Balsamiq. Laid out below is the realization of each wireframe into its actual state.
+
+Home Page
+
+![homepagedesktopview](static/documentation/wireframes/homepagedesktop.png)
+![actualhomepage](static/images/homepagegrab.png)
+
+History Page
+
+![historypagedesktopview](static/documentation/wireframes/historypagedesktop.png)
+![actualhistorypage](static/images/historygrab.png)
+
+Log In Page
+
+![loginpagedesktopview](static/documentation/wireframes/loginpagedesktop.png)
+![actualloginpage](static/images/logingrab.png)
+
+Registration Page
+
+![registrationpagedesktopview](static/documentation/wireframes/registrationpagedesktop.png)
+![actualregistrationpage](static/images/registrationgrab.png)
+
     
+    
+
+
+
 - ## <u>The Surface</u>
     
    
@@ -149,73 +207,74 @@
 
 ## Wireframes
 
-<img src="assets/wireframes/1landingpage.png" alt="landingpage" width="150" height="300">
-<img src="assets/wireframes/2mainpage.png" alt="mainpage" width="150" height="300">
-<img src="assets/wireframes/3mainpagewithloggedoutdropdown.png" alt="loggedoutdropdown" width="150" height="300">
-<img src="assets/wireframes/4mainpagewithloggedindropdown.png" alt="loggedindropdown" width="150" height="300">
-<img src="assets/wireframes/5storypage.png" alt="story" width="150" height="300">
-<img src="assets/wireframes/6historypage.png" alt="history" width="150" height="300">
-<img src="assets/wireframes/7login.png" alt="login" width="150" height="300">
-<img src="assets/wireframes/8register.png" alt="register" width="150" height="300">
-<img src="assets/wireframes/9competitionpage.png" alt="competition" width="150" height="300">
+- A summary of the home page on desktop, tablet, and mobile view.
+
+![homepagedesktopview](static/documentation/wireframes/homepagedesktop.png)
+![homepagetabletview](static/documentation/wireframes/homepagetablet.png)
+![homepagemobileview](static/documentation/wireframes/homepagemobile.png)
 
 
-- Above is a summary of the wireframes for this site in it's mobile version.
+- A summary of the history page on desktop, tablet, and mobile view.
 
-<img src="" alt="" width="150" height="300">
-<img src="" alt="" width="150" height="300">
-<img src="" alt="" width="150" height="300">
+![historypagedesktopview](static/documentation/wireframes/historypagedesktop.png)
+![historypagetabletview](static/documentation/wireframes/historypagetablet.png)
+![historypagemobileview](static/documentation/wireframes/historypagemobile.png)
 
-- EXPAND ON ABOVE WIREFRAMES
+- A summary of the Log In page on desktop, tablet, and mobile view.
 
-<img src="" alt="" width="179" height="250">
-<img src="" alt="" width="179" height="250">
-<img src="" alt="" width="179" height="250">
-<img src="" alt="" width="179" height="250">
-<img src="" alt="" width="179" height="250">
-<img src="" alt="" width="179" height="250">
-<img src="" alt="" width="179" height="250">
-<img src="" alt="" width="179" height="250">
+![loginpagedesktopview](static/documentation/wireframes/loginpagedesktop.png)
+![loginpagetabletview](static/documentation/wireframes/loginpagetablet.png)
+![loginpagemobileview](static/documentation/wireframes/loginpagemobile.png)
 
-- EXPAND ON ABOVE WIREFAMES
+- A summary of the Logged In / Registered page on desktop, tablet, and mobile view.
 
-<img src="" alt="" width="218" height="150">
-<img src="" alt="" width="218" height="150">
-<img src="" alt="" width="218" height="150">
-<img src="" alt="" width="218" height="150">
-<img src="" alt="" width="218" height="150">
-<img src="" alt="" width="218" height="150">
-<img src="" alt="" width="218" height="150">
-<img src="" alt="" width="218" height="150">
+![loggedinpagedesktopview](static/documentation/wireframes/loggedinpagedesktop.png)
+![loggedinpagetabletview](static/documentation/wireframes/loggedinpagetablet.png)
+![loggedinpagemobileview](static/documentation/wireframes/loggedinpagemobile.png)
 
-- EXPAND ON ABOVE WIREFRAMES
-    EXPAND ON FULL VIEW WIREFRAMES BELOW
+- A summary of the Registration page on desktop, tablet, and mobile view.
 
-- [Link to landing page desktop view]()
-- [Link to landing page tablet view]()
-- [Link to landing page mobile view]()
-- [Link to entry page desktop view]()
-- [Link to entry page tablet view]()
-- [Link to entry page mobile view]()
-- [Link to easy level page desktop view]()
-- [Link to easy level page tablet view]()
-- [Link to easy level page mobile view]()
-- [Link to easy level game over page desktop view]()
-- [Link to easy level game over page tablet view]()
-- [Link to easy level game over page mobile view]()
-- [Link to medium level page desktop view]()
-- [Link to medium level page tablet view]()
-- [Link to medium level page mobile view]()
-- [Link to medium level game over page desktop view]()
-- [Link to medium level game over page tablet view]()
-- [Link to medium level game over page mobile view]()
-- [Link to hard level page desktop view]()
-- [Link to hard level page tablet view]()
-- [Link to hard level page mobile view]()
-- [Link to hard level game over page desktop view]()
-- [Link to hard level game over page tablet view]()
-- [Link to hard level game over page mobile view]()
+![registrationpagedesktopview](static/documentation/wireframes/registrationpagedesktop.png)
+![registrationpagetabletview](static/documentation/wireframes/registrationpagetablet.png)
+![registrationpagemobileview](static/documentation/wireframes/registrationpagemobile.png)
 
+- A summary of the User Profile page on desktop, tablet, and mobile view.
+
+![userprofilepagedesktopview](static/documentation/wireframes/userprofilepagedesktop.png)
+![userprofilepagetabletview](static/documentation/wireframes/userprofilepagetablet.png)
+![userprofilepagemobileview](static/documentation/wireframes/userprofilepagemobile.png)
+
+- A summary of the Most Loved Fables page on desktop, tablet, and mobile view.
+
+![fablespagedesktopview](static/documentation/wireframes/fablespagedesktop.png)
+![fablespagetabletview](static/documentation/wireframes/fablespagetablet.png)
+![fablespagemobileview](static/documentation/wireframes/fablespagemobile.png)
+
+- A summary of the Quiz Time page on desktop, tablet, and mobile view.
+
+![quiztimepagedesktopview](static/documentation/wireframes/quizpagedesktop.png)
+![quiztimepagetabletview](static/documentation/wireframes/quizpagetablet.png)
+![quiztimepagemobileview](static/documentation/wireframes/quizpagemobile.png)
+
+- A summary of the Competition page on desktop, tablet, and mobile view.
+
+![competitionpagedesktopview](static/documentation/wireframes/competitionpagedesktop.png)
+![competitionpagetabletview](static/documentation/wireframes/competitionpagetablet.png)
+![competitionpagemobileview](static/documentation/wireframes/competitionpagemobile.png)
+
+- A summary of the User Profile Story Edit page on desktop, tablet, and mobile view.
+
+![usereditpagedesktopview](static/documentation/wireframes/usereditpagedesktop.png)
+![usereditpagetabletview](static/documentation/wireframes/usereditpagetablet.png)
+![usereditpagemobileview](static/documentation/wireframes/usereditpagemobile.png)
+
+- A summary of the User Profile Story Delete page on desktop, tablet, and mobile view.
+
+![storydeletepagedesktopview](static/documentation/wireframes/storydeletepagedesktop.png)
+![storydeletepagetabletview](static/documentation/wireframes/storydeletepagetablet.png)
+![storydeletepagemobileview](static/documentation/wireframes/storydeletepagemobile.png)
+
+---
 
 ## Colour Schemes
 
@@ -261,7 +320,8 @@ EXPLANATION OF USE OF COLORSCHEME<br>
     - CSS3
     - Javascript
     - jQuery
-    - Bootstrap 4.2.1
+    - Materialize
+    - Jinja
     - Fontawesome
     - Balsmiq was used for creating the wireframes for this project.
    

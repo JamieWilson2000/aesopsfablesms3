@@ -173,5 +173,16 @@ img {
     margin-left:10px;
     text-align:center;
 }
+.card-align {
+    margin-left: 20% !important;
+}
+@media screen and (max-width: 415px) {
+    .card-align {
+        margin-left: 0px !important;
+    }
+
+}
+
+
 
 
