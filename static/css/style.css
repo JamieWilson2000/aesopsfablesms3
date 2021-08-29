@@ -4,7 +4,7 @@ html, body {
     width:100%;
     height:100%;
     padding:0;
-    background-color: aliceblue;
+    background-color: #F0F8FF;
 }
 .wrapper {
     width: 100%;
@@ -40,13 +40,13 @@ h5 {
     margin-left: 10%;
 }
 .text-decoration {
-    color: black;
+    color: #000000;
     line-height: 2em;
-    text-shadow: 2px 2px 2px grey;
+    text-shadow: 2px 2px 2px #808080;
     margin-left: 0;
 }
 .text-white {
-    color: white;
+    color: #FFFFFF;
 }
 .nav-but {
     margin-top: 10px;
@@ -54,24 +54,24 @@ h5 {
 
 .text-nav {
     margin-left: 20%;
-    color: black;
+    color: #000000;
     font-family: 'Homemade Apple', cursive;
     font-size: 1.5rem;
 }
 .sidenav li > a {
-    color: white;
+    color: #FFFFFF;
     font-family: 'Libre Baskerville', serif;
     font-size: 1.5rem;
 }
 .white {
-    background-color: white;
+    background-color: #FFFFFF;
 }
 
 .brand-logo, h2 {
     width: 100%;
     text-align: center;
     margin-left: 10px;
-    color: white;
+    color: #FFFFFF;
     font-family: 'Homemade Apple', cursive;
     font-size: 2rem;
 }
@@ -138,7 +138,7 @@ img {
   }
   .vid-title {
       text-align: center;
-      color: black;
+      color: #000000;
       font-family: 'Homemade Apple', cursive; 
   }
   .flashmessage, h4 {
@@ -152,7 +152,7 @@ img {
 .icons {
     margin-left: 10px;
     font-size: 2rem;
-    color: rgb(60, 60, 60);
+    color: #3c3c3c;
 }
 .close {
     position:absolute;
