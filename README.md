@@ -546,7 +546,18 @@ For the textual elements I imported in two font family variants from Google Font
 
 # Method of Deployment
 
-- To fully test the site on multiple 'real-world' devices I wanted to create a live link to the site relatively early on that could be accessed universally. To do this a deployment to Heroku was required. To do similar the user should: 
+- My two previous Milestone projects were deployed on GitHub pages due them being more frontend, static sites. This current project is a data-centric, back-end project and therefore I had to use a host that is suited to my needs, ie: Heroku, Elastic Beanstalk, Firebase.
+
+- To fully test the site on multiple 'real-world' devices I wanted to create a live link to the site relatively early on that could be accessed universally. To do this, I opted to deploy the site using Heroku. To do similar the user should: 
+
+    - Firstly, make sure that a requirements.txt file has been created and that it contains the details of the necessary packages/modules used within the program code. If extra packages/modules are introduced throughout the development of the site then it is important to update their existence within the requirements.txt file so that they are utilised by Heroku.
+    ![requirementsgrab](static/images/requirementsgrab.png)
+    - Secondly a Procfile must be created with the name of the application file (app.py) so Heroku knows which file to access first. This is only a short one line file but ultimately very important!!  
+    ![procfilegrab](static/images/procfilegrab.png)
+    - Lastly these files must be pushed to GitHub in preparation for deploying the site through Heroku.  
+<p>&nbsp;</p> 
+
+- Once the above steps have been followed the user should follow the next steps:
 
     - Step 1: Open Heroku.com and sign in.
     - Step 2: Once signed in the user should see a list of apps previously created (if any) in chronological order. In the top right corner click on new and select 'Create new app'.
@@ -585,10 +596,11 @@ For the textual elements I imported in two font family variants from Google Font
 - Navigate to the Project Github Repository page.
 - Click the New button, this will trigger a new workspace.
 - Under Create a new Repository select Import a Repository
-- Now, in the Your Old Repository Clone URL field, type in ""
+- Now, in the Your Old Repository Clone URL field, type in "https://github.com/JamieWilson2000/aesopsfablesms3.git"
 - Enter in a new relevant repository name and click Begin Import.
 - After a short while you'll recieve a message saying that the new repository is ready with a link to take you to it.
-- From here on, open gipod and continue future developments.  
+- Open gitpod.
+- To ensure that all packages/modules are in place type 'pip install -r requirements.txt' in the terminal. As long as the requirements file is up to date, this will install all elements for running the site.  
 
 # Methods of Testing
 
@@ -598,30 +610,293 @@ For the textual elements I imported in two font family variants from Google Font
 
     - Mozilla Dev Tools - for testing stylings, sizing, and responsiveness
 
-    - http://ami.responsivedesign.is/ - again for testing stylings, sizing, and responsiveness.
+    - http://ami.responsivedesign.is/ - for general look and feel of the site.
 
     - https://coolors.co/ - for picking color schemes and testing contrast colors
 
-    - Github Pages - to access the live site across different devices
+    - Heroku.com - to access the live site across different devices
 
     - Google Lighthouse - to test perfomance 
 
+---  
+# Summary of User Testing
 
-## Summary of User Testing
+# User Story Recap
 
-- User 1: 
+- As a first time visitor to the site, I would want a clean, clear user interface, instantly outlining the purpose of the site. -- **<strong>[See Test 1](#test-1)</strong>**
+- As a first time visitor I would want to be able to navigate easily to the relevant areas of the site that are of interest to me. -- **<strong>[See Test 2](#test-2)</strong>**
+- As a first time visitor I would want to know the benefits of creating an account and why it is being suggested to log in. -- **<strong>[See Test 1](#test-1)</strong>**
+- As a visitor to the site I would expect responsiveness across all devices so the content would look and feel the same regardless of the device used. -- **<strong>Checked across all tests</strong>**
 <br>
 
-- 
+- As a returning visitor to the site I would want to log in to my account to access my personal details and any interactivity I have taken part in. -- **<strong>[See Test 4](#test-4)</strong>**
+- As a returning visitor I would want to access my profile to access, edit and delete any stories I have submitted. -- **<strong>[See Test 8](#test-8)</strong>**
 
-- User 2:
-<br>
+## Test 1  
+### <u>Accessing the site.</u>
+
+As a first time visitor to the site, I would want a clean, clear user interface, instantly outlining the purpose of the site.  
+
+<strong>Test Description:</strong> This is to test that the visitor will be greeted with the above.
+
+<strong>Steps Taken</strong>  
+
+- Navigate to http://aesops-fables-ms3.herokuapp.com/  
+
+<strong>Image of Test Result</strong>  
+![testgrab1](static/images/testgrab1.png)  ![testgrab1tab](static/images/testgrab1tab.png)
+
+- The text should reflect the purpose of the site and the benefit to the visitor of registering / logging in.  
+![testgrab1text](static/images/testgrab1text.png)
+
+<strong>Considered Pass/Fail:</strong> Pass  
+
+## Test 2  
+### <u>Identifying the Navigational elements.</u>
+
+As a first time visitor to the site, I want a clean clear navigational system in place.
+
+<strong>Test Description:</strong> This is to test that the visitor will know how to navigate around the site.
+
+<strong>Steps Taken</strong>
+
+- On desktop, the user should notice the options available placed clearly in the top right hand corner.  
+- On mobile devices, the user should notice a collapsible menu button, familiar in todays web applications and be able to access the options available.  
+<strong>Image of Test Result</strong>  
+![testgrab1](static/images/testgrab2.png)  ![testgrab1tab](static/images/testgrab2tab.png)
+    
+<strong>Considered Pass/Fail:</strong> Pass  
+
+## Test 3
+### <u>Accessing the 'History' page.</u>
+
+As a first time visitor to the site, I want to access content available to me at this point.
+
+<strong>Test Description:</strong> This is to test that the visitor can access the content available to them at this stage..
+
+<strong>Steps Taken</strong>  
+    
+- On desktop, the user should select the history option available placed clearly in the top right hand corner.  
+- On mobile devices, the user should notice a collapsible menu button, familiar in todays web applications and be able to access the history option available.  
+<strong>Image of Test Result</strong>  
+![testgrab3](static/images/testgrab3.png)  ![testgrab3tab](static/images/testgrab3tab.png)
+
+- When reaching the bottom of the page there is a 'Back to top' link that should return the user to the top of the page.
+![testgrab3](static/images/testgrab4.png)  ![testgrab3tab](static/images/testgrab4tab.png)  
+
+<strong>Considered Pass/Fail:</strong> Pass  
+
+## Test 4
+### <u>Accessing the 'Log In' page.</u>
+
+<strong>Test Description:</strong> This is to test that after viewing the opening content, the visitor can access the extra content available via registering / logging in.
+
+<strong>Steps Taken</strong>  
+    
+- On desktop, the user should select the 'Log In' option available placed clearly in the top right hand corner.  
+- On mobile devices, the user should notice a collapsible menu button, familiar in todays web applications and be able to access the 'Log In' option available.  
+<strong>Images of Test Results</strong>  
+
+![testgrab5](static/images/testgrab5.png)  ![testgrab5tab](static/images/testgrab5tab.png)
+
+- The user should be presented with the log in form. 
+- The user should note that if not previously registered on the site then a navigational link is available to them underneath the log in form.
+
+![testgrab6](static/images/testgrab6.png)  ![testgrab6tab](static/images/testgrab6tab.png) 
+
+- Upon clicking the 'Register Here' link, the user should be taken to the registration page.  
+
+![testgrab7](static/images/testgrab7.png)  ![testgrab7tab](static/images/testgrab7tab.png)  
+
+- Upon filling out the requested form, the user should be presented with the extra content as promised in the opening page.  
+
+![testgrab8](static/images/testgrab8.png)  ![testgrab8tab](static/images/testgrab8tab.png) 
+
+<strong>Considered Pass/Fail:</strong> Pass  
+
+## Test 5  
+### <u>Accessing the 'Most Loved Fables' page.</u>
+
+As a first time visitor to the site, I want to access the extra content available to me.
+
+<strong>Test Description:</strong> This is to test that the visitor can access the content and that the videos all play.
+
+<strong>Steps Taken</strong>  
+    
+- On desktop, the user could select the 'Most Loved Fables' option available placed clearly in the top right hand corner.  
+- On mobile devices, the user should notice a collapsible menu button, familiar in todays web applications and be able to access the 'Most Loved Fables' option available.  
+<strong>Image of Test Result</strong>  
+![testgrab9](static/images/testgrab9.png)  ![testgrab9tab](static/images/testgrab9tab.png)  
+
+- To watch each video, the user has to either click the main play button or choose to 'Watch on Youtube'
+
+- When reaching the bottom of the page there is a 'Back to top' link that should return the user to the top of the page.
+![testgrab10](static/images/testgrab10.png)  ![testgrab10tab](static/images/testgrab10tab.png)  
+
+<strong>Considered Pass/Fail:</strong> Pass 
+
+## Test 6
+### <u>Accessing the 'Quiz Time' page.</u>
+
+As a first time visitor to the site, I want to access the extra content available to me.
+
+<strong>Test Description:</strong> This is to test that the visitor can access the 'Quiz Time' page and participate in the quiz understanding how the game works.
+
+<strong>Steps Taken</strong>  
+    
+- On desktop, the user could select the 'Quiz Time' option available placed clearly in the top right hand corner.  
+- On mobile devices, the user should notice a collapsible menu button, familiar in todays web applications and be able to access the 'Quiz Time' option available.  
+<strong>Images of Test Results</strong>  
+![testgrab11](static/images/testgrab11.png)  ![testgrab11tab](static/images/testgrab11tab.png)
+
+- Questions are placed on cards with the user prompted to 'Click to reveal the answer' wherein once selected the answer will become visible. To close the card again, users will notice a close symbol on the right of the card. 
+
+![testgrab12](static/images/testgrab12close.png)  ![testgrab12tab](static/images/testgrab12open.png)
+
+- When reaching the bottom of the page there is a 'Back to top' link that should return the user to the top of the page.  
+
+![testgrab13](static/images/testgrab13.png)  ![testgrab13tab](static/images/testgrab13tab.png)  
+
+<strong>Considered Pass/Fail:</strong> Pass 
+
+## Test 7
+### <u>Accessing the 'Competition' page for submitting a story.</u>
+
+As a first time visitor to the site, I want to access the extra content available to me.
+
+<strong>Test Description:</strong> This is to test that the visitor can access the 'Competiton' page
+
+<strong>Steps Taken</strong>  
+    
+- On desktop, the user could select the 'Competition' option available placed clearly in the top right hand corner.  
+- On mobile devices, the user should notice a collapsible menu button, familiar in todays web applications and be able to access the 'Competition' option available.  
+<strong>Images of Test Results</strong>  
+![testgrab14](static/images/testgrab14.png)  ![testgrab14tab](static/images/testgrab14tab.png)
+
+- After completing the required fields, the user should be redirected to their 'Your Stories' page. Here they will be presented with a collapsible element displaying their submitted story.  
+
+<strong>Considered Pass/Fail:</strong> Pass 
+
+## Test 8
+### <u>Accessing the users 'Your Stories' page.</u>
+
+As a first time visitor to the site, I want to access the extra content available to me.
+
+<strong>Test Description:</strong> This is to test that the visitor can access the exclusive content available to them at this stage..
+
+<strong>Steps Taken</strong>  
+    
+- On desktop, the user could select the 'Your Stories' option available placed clearly in the top right hand corner.  
+- On mobile devices, the user should notice a collapsible menu button familiar in todays web applications and be able to access the 'Your Stories' option available.  
+<strong>Images of Test Results</strong>  
+![testgrab16](static/images/testgrab16.png)  ![testgrab16tab](static/images/testgrab16tab.png)
+
+- The user should notice that here, the option to click to read their submitted story. When clicked on should reveal the story in it's entirity.  
+
+Before:  
+![testgrab17](static/images/testgrab17before.png)
+
+After:  
+![testgrab17tab](static/images/testgrab17after.png)
+
+- In the event that the user hasn't submitted a story before accessing this page then he/she should be greeted with the flash message informing them of this and a prompt on where to go to do so.
+
+![testgrab17flash](static/images/testgrab17flash.png)
+
+<strong>Considered Pass/Fail:</strong> Pass  
+
+## Test 9
+### <u>Editing the Users Stories.</u>
+
+<strong>Test Description:</strong> This is to test that the visitor can access and edit their submitted story.
+
+<strong>Steps Taken</strong>  
+    
+- Within the 'Your Stories' page, the option to edit and delete the stories are available to the user.
+- Upon selecting the 'Edit' button, the user is taken to the page for editing their story.  
+- The story title field should be pre-populated with the users story title and the story field should be pre-populated with the users story.  
+<strong>Images of Test Results</strong>  
+![testgrab18](static/images/testgrab18.png)  ![testgrab18tab](static/images/testgrab18tab.png)
+
+- Here the user can make changes to both the title of the story and the main body of the story if he/she so wishes to. Once satisfied with the changes made the user should select the 'Save Changes' button to submit the changes to the database and therefore to the users 'Your Stories' page.  
+![testgrab19](static/images/testgrab19.png)  
+- And once 'Save Changes' has been selected the user should see that the changes have been saved. 
+
+![testgrab19tab](static/images/testgrab19full.png)
+
+<strong>Considered Pass/Fail:</strong> Pass  
+
+## Test 10
+### <u>Deleting the Users Story.</u>
+
+<strong>Test Description:</strong> This is to test that the visitor can access and delete their story if they so wish.
+
+<strong>Steps Taken</strong>  
+    
+- Within the 'Your Stories' page, the option to edit and delete the stories are available to the user.
+- Upon selecting the 'Delete' button, the user is presented with a second option. Here the user is given the option to change their mind and keep the story or continue with their choice to delete the story.   
+ 
+<strong>Images of Test Results</strong>  
+![testgrab20](static/images/testgrab20.png) 
+
+- Once selected this modal appears: 
+
+![testgrab20sure](static/images/testgrab20sure.png)  
+- If 'No!!!' is selected then the user will be redirected back to the stories page but if the 'Delete' button is selected again then the user is presented with this flash message.    
+![testgrab20deleted](static/images/testgrab20deleted.png)
+
+<strong>Considered Pass/Fail:</strong> Pass 
+
+## Test 11  
+### <u>Logging Out.</u>
+
+<strong>Test Description:</strong> This is to test that the visitor can log out of the site.
+
+<strong>Steps Taken</strong>  
+    
+- The user should note that after finishing his/her time on the site then in the top right hand corner the option is there to log out.
+- Upon selecting the 'Log Out' option the user should be greeted with the home page again and a flash message informing the user that he/she has been logged out.
+- Further confirmation that the user has been logged out should be the navigational items in the Nav bar and the mobile side Nav bar returning back to the limited content again.
+ 
+<strong>Images of Test Results</strong>  
+![testgrab21](static/images/testgrab21.png)  ![testgrab21tab](static/images/testgrab21tab.png)  
 
 
-- User 3: 
-<br>
+<strong>Considered Pass/Fail:</strong> Pass 
+
+## Test 12
+### <u>Accessing Social Icons.</u>
+
+<strong>Test Description:</strong> This is to test that the social icons redirect the user to the relevant site, opening in a new tab.
+
+<strong>Steps Taken</strong>  
+    
+- Should the user wish to explore one of the social icon options then by clicking on one should redirect them to the relevant page in a new tab.  
+
+<strong>Images of Test Results</strong>  
+
+- Firstly to test the LinkedIn social icon:
+
+![testgrab22b](static/images/testgrab22b.png)  ![testgrab22a](static/images/testgrab22a.png) 
+ 
+<strong>Considered Pass/Fail:</strong> Pass 
+
+- Next to test the GitHub social icon:
+
+![testgrab23a](static/images/testgrab23a.png)  ![testgrab23b](static/images/testgrab23b.png) 
+ 
+<strong>Considered Pass/Fail:</strong> Pass
+
+- Lastly to test the Wikipedia social icon:
+
+![testgrab24a](static/images/testgrab24a.png)  ![testgrab24b](static/images/testgrab24b.png) 
+ 
+<strong>Considered Pass/Fail:</strong> Pass
 
 - CONCLUSIONS
+    - After extensive testing across various devices, I was satisfied with the overall look and feel of the site. 
+    - I am satisfied that each of the users needs have been addressed.
+    - I am satisfied with the content and the presentation of the content.
 
 ## Problems and bugs experienced along the way
 
@@ -642,17 +917,31 @@ For the textual elements I imported in two font family variants from Google Font
 
 ## HTML Validator
 
-- 
+- I ran each html file through the W3 Html Validator and have displayed the results below. Due to each file not containing 100% HTML, issues did arise but I was confident that any issues weren't faults within my HTML code.  
+- **Errors highlighted in yellow.**
+
+- This is the validation for the 404.html file.
+![htmlvalid404](static/images/htmlvalid404.png)
 
 ## CSS Validator
 
-- 
+I ran my CSS file through the W3C CSS Validator and was pleased with the results.  
+Results shown below:  
+![cssvalidation](static/images/cssvalidation.png)
 
 ## Javascript Validator
 
-- 
+I ran my limited script file through the JSHint Validator and came back with one undefined variable.  
+Results shown below:  
+![scriptvalidation](static/images/jshintvalidation.png)
 
 ## Lighthouse Testing
+
+I ran the site through Google Lighthouse to check general performance and accessibilities and was reasonably content with the results on both desktop and mobile.  
+Results shown below:  
+
+![lighthousetestdesktop](static/images/lighthousetestdesktop.png)
+![lighthousetestmobile](static/images/lighthousetestmobile.png)
 
 
 # Credits
