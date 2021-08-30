@@ -7,7 +7,6 @@ from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
 
-
 app = Flask(__name__)
 
 
@@ -25,12 +24,6 @@ def home():
     return render_template("home.html")
 
 
-# @app.route("/details")
-# def get_details():
-#     members = mongo.db.competition.find()
-#     return render_template("details.html", members=members)
-
-
 @app.route("/fables")
 def fables():
     return render_template("fables.html")
@@ -38,7 +31,7 @@ def fables():
 
 @app.route("/quiz")
 def quiz():
-    return render_template("quiz.html")   
+    return render_template("quiz.html")
 
 
 @app.route("/history")
@@ -56,16 +49,13 @@ def profile(username):
     username = session["user"]
     stories = mongo.db.competition.find({"username": username})
 
-    if stories.count()== 0:
+    if stories.count() == 0:
         flash("You haven't written any stories yet!!")
         flash("Head over to the competition page to submit a story!")
         return render_template("profile.html", username=username)
     else:
         return render_template(
             "profile.html", username=username, stories=stories)
-        
-        
-        
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -76,11 +66,11 @@ def login():
 
         if existing_user:
             if check_password_hash(
-                existing_user["password"], request.form.get("password")):
-                session["user"] = request.form.get("username").lower()
-                flash("Welcome {}, now you're here.....".format(
-                    request.form.get("username")))
-                return redirect(url_for('registered'))
+                    existing_user["password"], request.form.get("password")):
+                    session["user"] = request.form.get("username").lower()
+                    flash("Welcome {}, now you're here.....".format(
+                        request.form.get("username")))
+                    return redirect(url_for('registered'))
             else:
                 flash("Incorrect Username and/or Password!")
                 return redirect(url_for('login'))
@@ -126,11 +116,10 @@ def register():
 def competition():
     if request.method == "POST":
 
-        # stories = mongo.db.competition.find_one()
         competition = {
-        "username": session['user'],
-        "storytitle": request.form.get("storytitle"),
-        "story": request.form.get("story")
+            "username": session['user'],
+            "storytitle": request.form.get("storytitle"),
+            "story": request.form.get("story")
         }
         mongo.db.competition.insert_one(competition)
 
@@ -144,7 +133,7 @@ def competition():
 def edit_story(story_id):
     story = mongo.db.competition.find_one({"_id": ObjectId(story_id)})
     if request.method == "POST":
-        
+
         competition = {
             "username": session['user'],
             "storytitle": request.form.get("storytitle"),
@@ -175,5 +164,5 @@ def error404(e):
 # Don't forget to change debug to false before submitting!!
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
-    port=int(os.environ.get("PORT")),
-    debug=True)
+            port=int(os.environ.get("PORT")),
+            debug=True)

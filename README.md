@@ -918,10 +918,45 @@ After:
 ## HTML Validator
 
 - I ran each html file through the W3 Html Validator and have displayed the results below. Due to each file not containing 100% HTML, issues did arise but I was confident that any issues weren't faults within my HTML code.  
-- **Errors highlighted in yellow.**
 
-- This is the validation for the 404.html file.
+
+- This is the validation for the 404.html file.  
+- I feel the errors highlighted do not reflect errors within my html code on this page.
+- **Errors highlighted in yellow.**
 ![htmlvalid404](static/images/htmlvalid404.png)
+
+- This is the validation for the home.html file.  
+- There are no errors or warnings to display.
+![homehtmlvalid](static/images/homehtmlvalid.png)
+
+- This is the validation for the history.html file.  
+- There are no errors or warnings to display.
+![historyhtmlvalid](static/images/historyhtmlvalid.png)
+
+- This is the validation for the login.html file.  
+- There are no errors or warnings to display.
+![loginhtmlvalid](static/images/loginhtmlvalid.png)
+
+- This is the validation for the fables.html file.  
+- There are no errors or warnings to display.
+![fableshtmlvalid](static/images/fableshtmlvalid.png)
+
+- This is the validation for the quiz.html file.  
+- There are no errors or warnings to display.
+![quizshtmlvalid](static/images/quizhtmlvalid.png)
+
+- This is the validation for the competition.html file.  
+- There are no errors or warnings to display.
+![competitionhtmlvalid](static/images/competitionhtmlvalid.png)
+
+## Python Validator
+
+I ran my app.py code through the online PEP8 check and was happy with the results.
+
+- This is the result for the PEP8 Online check:
+![pythonpep8check](static/images/pythonpep8check.png)
+
+
 
 ## CSS Validator
 
