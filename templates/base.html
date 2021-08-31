@@ -16,13 +16,14 @@
     {% block styles %}
     {% endblock %}
     <title>Aesops Fables</title>
+    <link rel="shortcut icon" type="image/jpg" href="static/images/favicon.png"/>
 </head>
 
 <body>
     <header>
         <nav class="nav-extended grey darken-2">
             <div class="nav-wrapper tabstyle">
-                <span class="titlestyle">Aesops Fables</span>
+                <span class="titlestyle"><a href="{{ url_for('home') }}">Aesops Fables</a></span>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     {% if session.user %}
@@ -59,7 +60,7 @@
         </ul>
     </header>
 
-    <div>
+    <section>
         <!-- flash messages -->
         {% with messages = get_flashed_messages() %}
         {% if messages %}
@@ -70,7 +71,7 @@
         {% endfor %}
         {% endif %}
         {% endwith %}
-    </div>
+    </section>
 
     <main class="container">
         {% block content %}
