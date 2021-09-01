@@ -5,21 +5,6 @@
 
 # Click link to visit ["Aesops Fables"](https://aesops-fables-ms3.herokuapp.com/)
 
-# Contents
-
-## - [Project Aims](#aim-of-the-project)
-## - [User Story](#user-story)
-## - [The 5 planes of UX](#the-5-planes-of-ux)
-## - [Early Stages](#early-stages)
-## - [The Website Features](#the-website-features)
-## - [User Interaction](#user-interaction)
-## - [The Coding Languages and Techniques Used](#the-coding-languages-and-techniques-used)
-## - [Method of Deployment](#method-of-deployment)
-## - [Methods of Testing](#methods-of-testing)
-## - [Code Validations](#code-validations)
-## - [Credits](#credits)
-
-
 # Aim of the project
 
 - The first aim of this project is to create an interesting website, reflecting on the fables written by greek storyteller Aesop. Myself, coming from a non religious background and being raised in a multi-denominational school with no religious education, the fables were a way to teach children the morals adhered to in life from a completely fictional and light-hearted perspective. For some, Aesops Fables will be completely new to them, for others it will be a chance to reflect on the stories read and taught to them throughout their childhood.
