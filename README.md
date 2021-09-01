@@ -1023,8 +1023,3 @@ Results shown below:
 
 # Acknowledgement  
 - Once again, I would like to thank Code Institute for the knowledge and the motivation shown to me up to this point. I would also like to thank my mentor Tim Nelson for his advice and encouragement in completing this project and my fellow slackers who have been both helpful and supportive in equal measures. Thanks also go to my family who have taken time to test the ongoing project, an ardious task at the best of times . I am so proud to have worked through the Python / Mongo modules and have retained enough understanding of the concepts to make sense of and bring to life this project. When I started the course I read in awe of the students completing their 2nd, 3rd and 4th Milestone projects and the technologies they were using and I questioned if I'd ever reach that stage...Well I am here and immensely proud of what I have acheived so far and I look forward to the final challenges that lay ahead. 
-
-
-# - [Back to top](#contents)
-
-
