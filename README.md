@@ -1008,15 +1008,36 @@ Results shown below:
 - For help fixing a problem regarding the iframe elements I referenced: "https://tylerduprey-52451.medium.com/a-perfect-video-container-with-css-37fd454c5eb5  
 - For creation of color scheme I used: https://coolors.co
 - To run a contrast check on my text elements I used the facility in https://coolers.co
-- For the Favicon image I used the following image from: https://lh3.googleusercontent.com/Yvy8JXtvzOz3Z6Gh3nu6rmsyNYTny2gEFoo8rZhUMOlmpCTiqxxYBPnc89NWcnASyg
+ 
+
+## Imagery used in the site
+
+- Lions Share: https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/v1555922221/shape/mentalfloss/lions-share.png?itok=24ELw4YF
+- Aesop: https://www.ancient-literature.com/wp-content/uploads/2019/08/aesop-painting-200x393.jpg  
+- Perugian Wall Carving: https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Perugia_-_Fontana_Maggiore_-_7_-_Esopo_%28gru_e_lupo_%26_lupo_e_agnello%29_-_Foto_G._Dall%27Orto_5_ago_2006.jpg/280px-Perugia_-_Fontana_Maggiore_-_7_-_Esopo_%28gru_e_lupo_%26_lupo_e_agnello%29_-_Foto_G._Dall%27Orto_5_ago_2006.jpg
+- 1484 Caxton Edition: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Caxton-Fables.png/220px-Caxton-Fables.png  
+- Walter Crane First Fables: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Crane_title.jpg/220px-Crane_title.jpg
+- Fable Wall Depiction: http://www.vam.ac.uk/__data/assets/image/0006/94614/hdr-aesops-fables-415.jpg
+- Favicon Image: https://lh3.googleusercontent.com/Yvy8JXtvzOz3Z6Gh3nu6rmsyNYTny2gEFoo8rZhUMOlmpCTiqxxYBPnc89NWcnASyg  
+
+## Video used in the site
+
+- The Tortoise and the Hare: https://www.youtube.com/watch?v=-RKB_zNCrJw  
+- The Fox and the Crow: https://www.youtube.com/watch?v=o-M8rKiq35s
+- The Ant and the Grasshopper: https://www.youtube.com/watch?v=_svBrlehmMo
+- The Lion and the Mouse: https://www.youtube.com/watch?v=iPybpc-xuG0
+- The Old Lion and the Fox: https://www.youtube.com/watch?v=kG3lWRYw270
+
 
 ## Throughout the creation of this project I have referred to the following for assistance and guidance:
 
-- https://codeinstitute.net/
+- https://codeinstitute.net/  
+- https://stackoverflow.com/  
+- https://www.geeksforgeeks.org/
 
 
-
-# Acknowledgement
+# Acknowledgement  
+- Once again, I would like to thank Code Institute for the knowledge and the motivation shown to me up to this point. I would also like to thank my mentor Tim Nelson for his advice and encouragement in completing this project and my fellow slackers who have been both helpful and supportive in equal measures. Thanks also go to my family who have taken time to test the ongoing project, an ardious task at the best of times . I am so proud to have worked through the Python / Mongo modules and have retained enough understanding of the concepts to make sense of and bring to life this project. When I started the course I read in awe of the students completing their 2nd, 3rd and 4th Milestone projects and the technologies they were using and I questioned if I'd ever reach that stage...Well I am here and immensely proud of what I have acheived so far and I look forward to the final challenges that lay ahead. 
 
 
 # - [Back to top](#contents)

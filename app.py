@@ -161,7 +161,6 @@ def error404(e):
     return render_template("404.html"), 404
 
 
-# Don't forget to change debug to false before submitting!!
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
